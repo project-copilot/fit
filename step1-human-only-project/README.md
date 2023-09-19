@@ -22,6 +22,21 @@ _Note: Due to a time budget of 10 hours, instead of writing the epics and user s
 #### Title: Create a Google Project and enable Google Fitness API
 #### Description:
 Set up a project in the Google Cloud Console, enable the Fitness API, and obtain an OAuth 2.0 client ID and API key.
+#### Evidence:
+- Google Project created.
+- Fitness API enabled.
+- Credentials to use Fitness API created.
+- App name: project-copilot-fitness
+- Scopes:
+    - .../auth/fitness.activity.read
+    - .../auth/fitness.body.read
+- OAuth Client ID
+    - Application type: Web application
+    - Name: FitWebClient
+    - Authorized JavaScript origins
+        - http://127.0.0.1:5500
+
+
 
 ### User story
 #### ID: FIT-4
