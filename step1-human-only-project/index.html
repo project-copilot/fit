@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <script src="https://accounts.google.com/gsi/client" onload="initClient()" async defer></script>
+  </head>
+  <body>
+    <script>
+      var client;
+      var access_token;
+
+      function initClient() {
+        client = google.accounts.oauth2.initTokenClient({
+          client_id: 'CLIENT_ID',
+          scope: 'https://www.googleapis.com/auth/fitness.activity.read',
+          callback: (tokenResponse) => {
+            access_token = tokenResponse.access_token;
+          },
+        });
+      }
+      function getToken() {
+        client.requestAccessToken();
+      }
+      function revokeToken() {
+        google.accounts.oauth2.revoke(access_token, () => {console.log('access token revoked')});
+      }
+      function getStepCount() {
+        var startTimeMillis = new Date().setHours(0, 0, 0, 0); // Start time for today
+        var endTimeMillis = new Date().setHours(23, 59, 59, 999); // End time for today
+
+        var requestBody = {
+          aggregateBy: [
+            {
+              dataTypeName: 'com.google.step_count.delta',
+            },
+          ],
+          bucketByTime: { durationMillis: 86400000 }, // 1 day in milliseconds
+          startTimeMillis: startTimeMillis,
+          endTimeMillis: endTimeMillis,
+        };
+
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            var response = JSON.parse(this.responseText);
+            var stepCount = response.bucket[0].dataset[0].point[0].value[0].intVal;
+            console.log('Step Count for Today:', stepCount);
+          }
+        };
+        xhr.open('POST', 'https://www.googleapis.com/fitness/v1/users/me/dataset:aggregate');
+        xhr.setRequestHeader('Authorization', 'Bearer ' + access_token);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send(JSON.stringify(requestBody));
+      }
+    </script>
+    <h1>Fitness App</h1>
+    <button onclick="getToken();">Get access token</button> <br><br>
+    <button onclick="getStepCount();">Get Step Count</button> <br><br>
+    <button onclick="revokeToken();">Revoke token</button>
+  </body>
+</html>
