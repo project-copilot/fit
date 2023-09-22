@@ -9,6 +9,7 @@
 
       function initClient() {
         client = google.accounts.oauth2.initTokenClient({
+          //Replace with your CLIENT_ID
           client_id: '505215634987-bk8dd7cve8q34s3v8bc7f0cpga7tvl6i.apps.googleusercontent.com',
           scope: 'https://www.googleapis.com/auth/fitness.activity.read',
           callback: (tokenResponse) => {
@@ -69,38 +70,86 @@
       }
 
       function getHeartPoints() {
-        var startTimeMillis = new Date().setHours(0, 0, 0, 0); // Start time for today
-        var endTimeMillis = new Date().setHours(23, 59, 59, 999); // End time for today
+        return new Promise((resolve, reject) => {
+          var startTimeMillis = new Date().setHours(0, 0, 0, 0); // Start time for today
+          var endTimeMillis = new Date().setHours(23, 59, 59, 999); // End time for today
 
-        var requestBody = {
-          aggregateBy: [
-            {
-              dataTypeName: 'com.google.heart_minutes',
-            },
-          ],
-          bucketByTime: { durationMillis: 86400000 }, // 1 day in milliseconds
-          startTimeMillis: startTimeMillis,
-          endTimeMillis: endTimeMillis,
-        };
+          var requestBody = {
+            aggregateBy: [
+              {
+                dataTypeName: 'com.google.heart_minutes',
+              },
+            ],
+            bucketByTime: { durationMillis: 86400000 }, // 1 day in milliseconds
+            startTimeMillis: startTimeMillis,
+            endTimeMillis: endTimeMillis,
+          };
 
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function () {
-          if (this.readyState == 4 && this.status == 200) {
-            var response = JSON.parse(this.responseText);
-            var heartRateData = response.bucket[0].dataset[0].point;
-            if (heartRateData.length > 0) {
-              // The first entry is the latest heart rate data
-              var latestHeartRate = heartRateData[0].value[0].fpVal;
-              console.log('Heart Points for Today:', latestHeartRate);
-            } else {
-              console.log('No heart points data found for today.');
+          var xhr = new XMLHttpRequest();
+          xhr.onreadystatechange = function () {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                var response = JSON.parse(this.responseText);
+                var heartRateData = response.bucket[0].dataset[0].point;
+                if (heartRateData.length > 0) {
+                  // The first entry is the latest heart rate data
+                  var latestHeartRate = heartRateData[0].value[0].fpVal;
+                  console.log('Heart Points for Today:', latestHeartRate);
+                  resolve(latestHeartRate); // Resolve the promise with the heart points
+                } else {
+                  console.log('No heart points data found for today.');
+                  reject(new Error('No heart points data found for today.')); // Reject the promise on no data
+                }
+              } else {
+                console.log('Failed to fetch heart points data.');
+                reject(new Error('Failed to fetch heart points data.')); // Reject the promise on error
+              }
             }
-          }
-        };
-        xhr.open('POST', 'https://www.googleapis.com/fitness/v1/users/me/dataset:aggregate');
-        xhr.setRequestHeader('Authorization', 'Bearer ' + access_token);
-        xhr.setRequestHeader('Content-Type', 'application/json');
-        xhr.send(JSON.stringify(requestBody));
+          };
+          xhr.open('POST', 'https://www.googleapis.com/fitness/v1/users/me/dataset:aggregate');
+          xhr.setRequestHeader('Authorization', 'Bearer ' + access_token);
+          xhr.setRequestHeader('Content-Type', 'application/json');
+          xhr.send(JSON.stringify(requestBody));
+        });
+      }
+
+
+      // Function to calculate the health status score
+      function calculateHealthStatusScore() {
+        // Constants for healthy goals
+        const dailyCaloriesGoalMin = 2000;
+        const dailyCaloriesGoalMax = 2500;
+        const heartPointsGoal = 21; // 21 Heart Points per day
+
+        // Retrieve daily calories burned and heart points
+        const dailyCaloriesBurned = getCaloriesBurned();
+        const dailyHeartPoints = getHeartPoints();
+
+        // Calculate the health status score
+        let healthStatusScore = 0;
+
+        // Check if daily calories burned are within the healthy range
+        if (dailyCaloriesBurned >= dailyCaloriesGoalMin && dailyCaloriesBurned <= dailyCaloriesGoalMax) {
+          healthStatusScore += 1;
+        }
+
+        // Check if daily heart points meet the healthy goal
+        if (dailyHeartPoints >= heartPointsGoal) {
+          healthStatusScore += 1;
+        }
+
+        // Determine health status based on the score
+        let healthStatus;
+        if (healthStatusScore === 2) {
+          healthStatus = 'Excellent';
+        } else if (healthStatusScore === 1) {
+          healthStatus = 'Good';
+        } else {
+          healthStatus = 'Needs Improvement';
+        }
+
+        console.log('Health Status Score:', healthStatusScore);
+        console.log('Health Status:', healthStatus);
       }
 
     </script>
@@ -109,6 +158,7 @@
     <button onclick="getStepCount();">Get Step Count</button> <br><br>
     <button onclick="getCaloriesBurned();">Get Calories Burned</button> <br><br>
     <button onclick="getHeartPoints();">Get Heart Points</button> <br><br>
+    <button onclick="calculateHealthStatusScore();">Get Health Status Score</button> <br><br>
     <button onclick="revokeToken();">Revoke token</button>
   </body>
 </html>
