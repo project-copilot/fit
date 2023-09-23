@@ -111,3 +111,7 @@ In FIT-6, the goal is to calculate and display the health status score within a 
 ### Sprint
 
 ![Sprint](/step1-human-only-project/sprint.png)
+
+### Project metrics
+#### Project planning and Code development time: 10hs.
+#### Bugs: 3.
