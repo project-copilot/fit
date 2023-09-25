@@ -1,4 +1,4 @@
-# CodeLab: Creating a Fitness App Using Project Copilot
+# CodeLab: Creating a Fitness App Using Project Copilot and GitHub Copilot
 ## Step 1: Initial Version of the Project Created by Humans Only
 This project is planned to be completed in one sprint. For this sprint, 2 epics and 4 user stories were created, with 2 user stories assigned to each epic. Here are the epics and their associated stories:
 

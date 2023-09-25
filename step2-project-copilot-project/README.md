@@ -1,4 +1,4 @@
-# CodeLab: Creating a Fitness App Using Project Copilot
+# CodeLab: Creating a Fitness App Using Project Copilot and GitHub Copilot
 ## Step 2: Improving Project Planning using Project Copilot
 Revamping the epics and user stories for enhancement with the assistance of Project Copilot, in order to enhance project planning, improve code generation, and mitigate deviations and rework.
 Below are the enhanced epics and their corresponding stories:
@@ -169,7 +169,7 @@ As a fitness enthusiast, I want to track my daily calorie burn based on the numb
 
 Action:
 
-I want to retrieve the number of steps I have taken today and calculate the corresponding calories burned.
+I want to retrieve the number of steps I have taken today and calculate and display the corresponding calories burned.
 
 Outcome:
 
