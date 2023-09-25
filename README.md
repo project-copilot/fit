@@ -1,4 +1,4 @@
-# CodeLab: Creating a Fitness App Using Project Copilot
+# CodeLab: Creating a Fitness App Using Project Copilot and GitHub Copilot
 ## Summary
 This CodeLab is a brief tutorial on how to utilize Project Copilot and GitHub Copilot in a small software development project.
 
