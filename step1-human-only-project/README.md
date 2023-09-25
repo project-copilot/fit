@@ -41,8 +41,6 @@ Tool for debug Chrome DevTools
         - http://localhost
 - Developer approved tester: matias.molinas@gmail.com
 
-Note: Simple way to deploy the app in a local enviroment using python: python -m http.server
-
 
 ### User story
 #### ID: FIT-4
