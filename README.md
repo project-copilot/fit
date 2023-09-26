@@ -19,6 +19,14 @@ flowchart TD
     C -->|New| F[Sub Task]
 ```
 
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 ### ChatGPT vs Project Copilot 
 - Both provides Generative AI for Epics, User Stories and Sub Tasks
     - Why is better Project Copilot?
