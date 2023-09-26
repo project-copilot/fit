@@ -7,13 +7,8 @@ This CodeLab is a brief tutorial on how to utilize Project Copilot and GitHub Co
 ### Why Project Copilot?
 ```mermaid
 flowchart TD
-    A[Atlassian Knowledge Graph
-    Confluece - Documents
-    Jira - Epics, User Stories, Tasks] -->|Get context| B(Project Copilot)
-    B --> C{User input
-    and
-    Prompt 
-    Expert Engine}
+    A[Atlassian Knowledge Graph] -->|Get context| B(Project Copilot)
+    B --> C{Prompt Expert Engine}
     C -->|New| D[Epic]
     C -->|New| E[User Story]
     C -->|New| F[Sub Task]
