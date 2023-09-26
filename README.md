@@ -17,7 +17,7 @@ flowchart TD
 - Both provides Generative AI for Epics, User Stories and Sub Tasks
     - Why is better Project Copilot?
         - You don't need to write prompts from scratch
-        - You can extend the prompt expert engine with your prompts
+        - You can extend the prompt expert engine with commands
         - Context based on Atlassian Knowledge Graph
 
 ### GitHub Copilot
