@@ -160,7 +160,7 @@ Retrieve today number of steps and calculate and display the calories burned in 
 #### Actions in Project Copilot:
 - Press "Complete" button 2 times
 - Write a technical reference command:
-    - <technical-reference>Write a proposal of how to implement the javascript function to calculate the calories based on the steps if there is a function getStepCount() that returns today’s number of user steps</technical-reference>
+    - '<technical-reference>'Write a proposal of how to implement the javascript function to calculate the calories based on the steps if there is a function getStepCount() that returns today’s number of user steps'</technical-reference>'
 - Press "Complete" button
 #### Final Description:
 User:
@@ -223,7 +223,7 @@ Calculate and display the health status score by comparing the heart points  and
     - Note: the average adult requires around 2,000 to 2,500 calories per day to maintain their weight, and based on World Health Organization (WHO) and American Heart Association (AHA) guidelines for cardiovascular health, for a healthy person 150 Heart Points per week is a good score, that is approximately 21 Heart Points per day.
 - Press "Complete" button to generate the acceptance criteria.
 - Write a technical reference command:
-    - <technical-reference>Write a proposal of how to implement the javascript function  to calculate the health status score based on the steps if there are two functions getCaloriesBurned() that provides today's burned calories and getHeartPoints() that provides today's heart points considering 3 possible health status: Excellent, Good and Needs Improvement</technical-reference>
+    - '<technical-reference>'Write a proposal of how to implement the javascript function  to calculate the health status score based on the steps if there are two functions getCaloriesBurned() that provides today's burned calories and getHeartPoints() that provides today's heart points considering 3 possible health status: Excellent, Good and Needs Improvement'</technical-reference>'
 - Press "Complete" button
 #### Final Description:
 User:
