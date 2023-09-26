@@ -8,18 +8,9 @@ This CodeLab is a brief tutorial on how to utilize Project Copilot and GitHub Co
 ```mermaid
 flowchart TD
     A[Atlassian Knowledge Graph] -->|Get context| B(Project Copilot)
+    L[Epic/User Story/SubTask] -->|Draft & Commands| B(Project Copilot)
     B --> C{Prompt Expert Engine}
-    C -->|New| D[Epic]
-    C -->|New| E[User Story]
-    C -->|New| F[Sub Task]
-```
-
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+    C -->|Improved| D[Epic/User Story/SubTask]
 ```
 
 ### ChatGPT vs Project Copilot 
