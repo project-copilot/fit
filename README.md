@@ -18,6 +18,9 @@ flowchart TD
     - Why is better Project Copilot?
         - You don't need to write prompts from scratch
         - You can extend the prompt expert engine with commands
+            - Current commands:
+                - _Instruction: user definition of the custom instruction_
+                - '<technical-reference>'user context for the technical reference'</technical-reference>'
         - Context based on Atlassian Knowledge Graph
 
 ### GitHub Copilot
