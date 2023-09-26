@@ -4,32 +4,46 @@ This CodeLab is a brief tutorial on how to utilize Project Copilot and GitHub Co
 
 ## Introduction to Project Copilot
 
-<details>
-    <summary>Project Copilot</summary>
-    <details>
-        <summary>Project Copilot</summary>
-            ```mermaid
-                graph TD;
-                    A-->B;
-                    A-->C;
-                    B-->D;
-                    C-->D;
-            ```
-        </details>
-    </details>
-    <details>
-        <summary>ChatGPT vs Project Copilot</summary>
-            <img src="chatgpt-vs-projectcopilot.png" name="chatgpt-vs-projectcopilot">
-        </details>
-    </details>
-    <details>
-        <summary>ChatGPT vs Project Copilot</summary>
-            <img src="chatgpt-vs-projectcopilot.png" name="chatgpt-vs-projectcopilot">
-        </details>
-    </details>
-    <img src="image-url" name="image-name">
-    <img src="image-url" name="image-name">
-</details>
+### Why Project Copilot?
+```mermaid
+flowchart TD
+    A[Atlassian Knowledge Graph
+    Confluece - Documents
+    Jira - Epics, User Stories, Tasks] -->|Get context| B(Project Copilot)
+    B --> C{User input
+    and
+    Prompt 
+    Expert Engine}
+    C -->|New| D[Epic]
+    C -->|New| E[User Story]
+    C -->|New| F[Sub Task]
+```
+
+### ChatGPT vs Project Copilot 
+- Both provides Generative AI for Epics, User Stories and Sub Tasks
+    - Why is better Project Copilot?
+        - You don't need to write prompts from scratch
+        - You can extend the prompt expert engine with your prompts
+        - Context based on Atlassian Knowledge Graph
+
+### GitHub Copilot
+- Generative AI for Code
+    - Based on 
+        - Previous code
+        - Code comments
+        - Chat
+    - Cons
+        - Deviation of code regarding requeriments for poor user stories
+        - Rework because deviation
+
+### Project Copilot and GitHub Copilot
+- Generative AI for Project Planning (Epics, User Stories, Sub Tasks) and Code
+    - Generate Epics, User Stories and Sub-Tasks
+    - Use User Stories and Sub-Tasks for chat code generation
+
+### Project Copilot for Semantic Validation
+- Automatic semantic description for code of pull requests (PR)
+- Validation of semantic description of PR regarding user stories
 
 ## CodeLab
 
