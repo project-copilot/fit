@@ -5,10 +5,30 @@ This CodeLab is a brief tutorial on how to utilize Project Copilot and GitHub Co
 ## Introduction to Project Copilot
 
 <details>
-  <summary>Project Copilot</summary><details>
-  <img src="project-copilot.png" name="Project-Copilot">
-  <img src="image-url" name="image-name">
-  <img src="image-url" name="image-name">
+    <summary>Project Copilot</summary>
+    <details>
+        <summary>Project Copilot</summary>
+            ```mermaid
+                graph TD;
+                    A-->B;
+                    A-->C;
+                    B-->D;
+                    C-->D;
+            ```
+        </details>
+    </details>
+    <details>
+        <summary>ChatGPT vs Project Copilot</summary>
+            <img src="chatgpt-vs-projectcopilot.png" name="chatgpt-vs-projectcopilot">
+        </details>
+    </details>
+    <details>
+        <summary>ChatGPT vs Project Copilot</summary>
+            <img src="chatgpt-vs-projectcopilot.png" name="chatgpt-vs-projectcopilot">
+        </details>
+    </details>
+    <img src="image-url" name="image-name">
+    <img src="image-url" name="image-name">
 </details>
 
 ## CodeLab
