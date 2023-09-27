@@ -21,13 +21,14 @@ flowchart TD
 - Both provides Generative AI for Epics, User Stories and Sub Tasks
     - Why is better Project Copilot?
         - You don't need to write prompts from scratch
+        - Context based on Atlassian Knowledge Graph
         - You can extend the prompt expert engine with commands
             - Current commands:
                 - _Instruction: user definition of the custom instruction_
 ```xml
 <technical-reference>User context for the technical reference </technical-reference>
 ```
-        - Context based on Atlassian Knowledge Graph
+        
 ```mermaid
 flowchart TD
     A[Atlassian Knowledge Graph] -->|Get context| B(Project Copilot)

@@ -15,6 +15,8 @@ Implement authentication and authorization using Google APIs. The goal is to ena
 #### Final description:
 Implement authentication and authorization using Google APIs to create a simple HTML and JavaScript client-side app. The goal is to enable users to access their Google Fit data in order to gain insights into their status and progress.
 
+![FIT-1](/step2-project-copilot-project/fit-1.png)
+
 ### Epic
 #### ID: FIT-2
 #### Title: Analyze and process Google Fit data
@@ -26,6 +28,8 @@ Analyze Google Fit data to calculate calories consumed and progress in health st
 - Press "Complete" button
 #### Final Description:
 Analyze Google Fit data to calculate calories consumed and progress in health status. This epic will involve processing the user's step count data to determine the number of calories burned. Additionally, it will utilize heart point data to track the user's progress in achieving their health goals.
+
+![FIT-2](/step2-project-copilot-project/fit-2.png)
 
 ### User story
 #### ID: FIT-3
@@ -64,6 +68,8 @@ Acceptance Criteria:
 ##### Technical reference:
 Simple way to deploy the app in a local enviroment using python: python -m http.server
 Tool for debug Chrome DevTools
+
+![FIT-3](/step2-project-copilot-project/fit-3.png)
 
 ### User story
 #### ID: FIT-4
@@ -151,6 +157,8 @@ Sample code to retrieve user steps:
 
 _Note: In this user story, the Tech Reference is authored by the user after AI assistance generates the user story and acceptance criteria. Is it feasible to automatically generate the Technical Reference by employing the custom command 'Technical Reference:' in italics. This process works seamlessly when there is a similar user story with a matching Technical Reference or when a Technical Design Document from Confluence is linked to the user story._
 
+![FIT-4](/step2-project-copilot-project/fit-4.png)
+
 ### User story
 #### ID: FIT-5
 #### Epic ID: FIT-2
@@ -212,6 +220,8 @@ function calculateCalories() {
 This function retrieves the number of steps using the `getStepCount()` function and calculates the corresponding calories burned by multiplying the steps with a factor of 0.05. You can adjust the factor based on your specific requirements.
 
 Considering the semantically related user stories, this feature can be integrated into a fitness tracking app that allows users to compare energy plans, track their fitness goals, and make informed decisions about their diet and exercise routine.
+
+![FIT-5](/step2-project-copilot-project/fit-5.png)
 
 ### User story
 #### ID: FIT-6
@@ -300,3 +310,4 @@ function calculateHealthStatusScore(heartPoints, caloriesBurned) {
 
 ```
 
+![FIT-6](/step2-project-copilot-project/fit-6.png)
