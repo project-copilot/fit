@@ -4,7 +4,11 @@ This CodeLab is a brief tutorial on how to utilize Project Copilot and GitHub Co
 
 ## Introduction to Project Copilot
 
-### Why Project Copilot?
+### The Advantages of Project Copilot
+- With Project Copilot, receive assistance from an Artificial Intelligence system designed to enhance your Epics, User Stories, and Subtasks:
+    - Leverages comprehensive data analysis and utilization of the Atlassian Knowledge Graph
+        - Integrates relevant Confluence Design Documents
+        - Incorporates related and linked Epics, User Stories and Subtasks
 ```mermaid
 flowchart TD
     A[Atlassian Knowledge Graph] -->|Get context| B(Project Copilot)
@@ -20,8 +24,19 @@ flowchart TD
         - You can extend the prompt expert engine with commands
             - Current commands:
                 - _Instruction: user definition of the custom instruction_
-                - '<technical-reference>' user context for the technical reference '</technical-reference>'
+```xml
+<technical-reference>User context for the technical reference </technical-reference>
+```
         - Context based on Atlassian Knowledge Graph
+```mermaid
+flowchart TD
+    A[Atlassian Knowledge Graph] -->|Get context| B(Project Copilot)
+    L[Jira Epic/User Story/SubTask] -->|Jira User Draft & Commands| B(Project Copilot)
+    B --> C{Prompt Expert Engine}
+    C -->|Improved| D[Jira Epic/User Story/SubTask]
+    F[ChatGPT User Draft & Prompt] -->|Get context| G(ChatGPT)
+    G --> H[ChatGPT Epic/User Story/SubTask]
+```
 
 ### GitHub Copilot
 - Generative AI for Code
@@ -32,15 +47,40 @@ flowchart TD
     - Cons
         - Deviation of code regarding requeriments for poor user stories
         - Rework because deviation
+```mermaid
+flowchart TD
+    A[Previous Code] -->|Get context| D(GitHub Copilot)
+    B[Code Comments] -->|Get context| D(GitHub Copilot)
+    C[GitHub Chat] -->|Get context| D(GitHub Copilot)
+    D(GitHub Copilot) --> E(New Code)
+```
 
 ### Project Copilot and GitHub Copilot
 - Generative AI for Project Planning (Epics, User Stories, Sub Tasks) and Code
     - Generate Epics, User Stories and Sub-Tasks
     - Use User Stories and Sub-Tasks for chat code generation
+```mermaid
+flowchart TD
+    A[User Draft] -->|Get context| B(Project Copilot)
+    B(Project Copilot) --> C(User Story)
+    C(User Story) -->|Get context| D(GitHub Copilot Chat)
+    D(GitHub Copilot Chat) --> E(New Code)
+```
 
 ### Project Copilot for Semantic Validation
 - Automatic semantic description for code of pull requests (PR)
 - Validation of semantic description of PR regarding user stories
+```mermaid
+flowchart TD
+    A[User Draft] -->|Get context| B(Project Copilot)
+    B(Project Copilot) --> C(User Story)
+    C(User Story) -->|Get context| D(GitHub Copilot Chat)
+    D(GitHub Copilot Chat) --> E(New Code)
+    E(New Code) --> F(PR)
+    F(PR) --> |Get context|G(Project Copilot)
+    G(Project Copilot) --> H(PR Semantic Description)
+    H(PR Semantic Description) --> I(Semantic Validation)
+```
 
 ## CodeLab
 
