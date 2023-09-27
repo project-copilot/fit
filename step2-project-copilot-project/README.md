@@ -160,7 +160,9 @@ Retrieve today number of steps and calculate and display the calories burned in 
 #### Actions in Project Copilot:
 - Press "Complete" button 2 times
 - Write a technical reference command:
-    - '<technical-reference>'Write a proposal of how to implement the javascript function to calculate the calories based on the steps if there is a function getStepCount() that returns today’s number of user steps'</technical-reference>'
+```xml
+<technical-reference>Write a proposal of how to implement the javascript function to calculate the calories based on the steps if there is a function getStepCount() that returns today’s number of user steps</technical-reference>
+```
 - Press "Complete" button
 #### Final Description:
 User:
