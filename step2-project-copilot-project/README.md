@@ -169,7 +169,7 @@ Retrieve today number of steps and calculate and display the calories burned in 
 - Press "Complete" button 2 times
 - Write a technical reference command:
 ```xml
-<technical-reference>Write a proposal of how to implement the javascript function to calculate the calories based on the steps if there is a function getStepCount() that returns today’s number of user steps</technical-reference>
+<technical-reference>Write a proposal of how to implement the javascript function to calculate the calories based on the steps if there is a function getStepCount() that returns today’s number of user steps. Add to the total calories the average BMR: 1,800 calories per day,  average NEAT: 450 calories per day , average TEF: 200 calories per day, and adaptive Thermogenesis 100 calories per day. Write the function getCalories()</technical-reference>
 ```
 - Press "Complete" button
 #### Final Description:
@@ -201,25 +201,31 @@ Acceptance Criteria:
 
 Technical Reference:
 
-To implement the javascript function to calculate the calories based on the steps, you can use the following code snippet:
+To implement the javascript function to calculate the calories based on the steps, we can use the following approach:
 
 ```javascript
 
-function calculateCalories() {
+function getCalories() {
 
-  const steps = getStepCount(); // Assuming there is a function getStepCount() that returns today’s number of user steps
+  const stepCount = getStepCount();
 
-  const caloriesBurned = steps * 0.05; // Assuming 1 step burns 0.05 calories
+  const averageBMR = 1800;
 
-  return caloriesBurned;
+  const averageNEAT = 450;
+
+  const averageTEF = 200;
+
+  const adaptiveThermogenesis = 100;
+
+  const totalCalories = stepCount + averageBMR + averageNEAT + averageTEF + adaptiveThermogenesis;
+
+  return totalCalories;
 
 }
 
 ```
 
-This function retrieves the number of steps using the `getStepCount()` function and calculates the corresponding calories burned by multiplying the steps with a factor of 0.05. You can adjust the factor based on your specific requirements.
-
-Considering the semantically related user stories, this feature can be integrated into a fitness tracking app that allows users to compare energy plans, track their fitness goals, and make informed decisions about their diet and exercise routine.
+This function retrieves the number of steps taken today using the `getStepCount()` function and calculates the calories burned based on a reliable formula. It adds the average Basal Metabolic Rate (BMR), Non-Exercise Activity Thermogenesis (NEAT), Thermic Effect of Food (TEF), and Adaptive Thermogenesis to the step count.
 
 ![FIT-5](/step2-project-copilot-project/fit-5.png)
 
