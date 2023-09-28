@@ -93,7 +93,7 @@ The goal of the CodeLab is to gradually recreate the same project with the assis
 
 The project's objective is to develop a compact client-side fitness application using HTML and JavaScript. This application should be capable of interfacing with the Google Fit REST API and computing daily calorie consumption based on the number of steps taken. Additionally, it should calculate a health score derived from these calories and "heart points."
 
-Use this link to install [Project Copilot](https://marketplace.atlassian.com/apps/1231554?tab=overview&hosting=cloud)
+Link to install [Project Copilot](https://marketplace.atlassian.com/apps/1231554?tab=overview&hosting=cloud)
 
 
 
