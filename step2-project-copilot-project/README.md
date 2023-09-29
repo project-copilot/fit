@@ -164,7 +164,7 @@ _Note: In this user story, the Tech Reference is authored by the user after AI a
 #### Epic ID: FIT-2
 #### Title: Calculate today's calories burned based on the number of steps
 #### Initial Description:
-Retrieve today number of steps and calculate and display the calories burned in a day.
+Press a button and retrieve today number of steps and calculate and display the calories burned in a day.
 #### Actions in Project Copilot:
 - Press "Complete" button 2 times
 - Write a technical reference command:
@@ -175,57 +175,57 @@ Retrieve today number of steps and calculate and display the calories burned in 
 #### Final Description:
 User:
 
-As a fitness enthusiast, I want to track my daily calorie burn based on the number of steps I take.
+As a fitness enthusiast, I want to track the number of steps I take in a day and calculate the calories burned.
 
 Action:
 
-I want to retrieve the number of steps I have taken today and calculate and display the corresponding calories burned.
+I want to press a button to retrieve the number of steps I have taken today and calculate the calories burned based on that number.
 
 Outcome:
 
-So I can have a clear understanding of my daily calorie burn and track my progress towards my fitness goals. This will help me make informed decisions about my diet and exercise routine.
+So I can see the total calories burned for the day, which will help me track my fitness progress and make informed decisions about my diet and exercise routine.
 
 Acceptance Criteria:
 
-1. Given that I am a fitness enthusiast, when I retrieve the number of steps I have taken today, then I should be able to calculate the corresponding calories burned
+1. Given that I am a fitness enthusiast, when I press the button to retrieve the number of steps I have taken today, then the system should display the total number of steps taken.
 
-2. Given that I am a fitness enthusiast, when I calculate the calories burned based on the number of steps, then the result should be accurate and reliable
+2. Given that I am a fitness enthusiast, when I press the button to calculate the calories burned, then the system should use the number of steps taken to calculate the calories burned.
 
-3. Given that I am a fitness enthusiast, when I track my daily calorie burn, then I should be able to view the calculated calories burned for today
+3. Given that I am a fitness enthusiast, when the system calculates the calories burned, then it should use a predefined formula or algorithm to accurately calculate the calories burned based on the number of steps.
 
-4. Given that I am a fitness enthusiast, when I track my daily calorie burn, then I should be able to track my progress towards my fitness goals
+4. Given that I am a fitness enthusiast, when the system displays the total calories burned for the day, then it should show the calculated value in a clear and easily readable format.
 
-5. Given that I am a fitness enthusiast, when I track my daily calorie burn, then I should be able to make informed decisions about my diet and exercise routine
-
-6. Given that I am a fitness enthusiast, when I track my daily calorie burn, then I should be able to have a clear understanding of my daily calorie burn
+5. Given that I am a fitness enthusiast, when I view the total calories burned for the day, then it should help me track my fitness progress and make informed decisions about my diet and exercise routine.
 
 Technical Reference:
 
-To implement the javascript function to calculate the calories based on the steps, we can use the following approach:
+To implement the JavaScript function to calculate the calories based on the steps, we can use the following approach:
 
 ```javascript
 
 function getCalories() {
 
-  const stepCount = getStepCount();
+  const steps = getStepCount(); // Assuming there is a function getStepCount() that returns today's number of user steps
 
-  const averageBMR = 1800;
+  const averageBMR = 1800; // Average Basal Metabolic Rate (BMR) in calories per day
 
-  const averageNEAT = 450;
+  const averageNEAT = 450; // Average Non-Exercise Activity Thermogenesis (NEAT) in calories per day
 
-  const averageTEF = 200;
+  const averageTEF = 200; // Average Thermic Effect of Food (TEF) in calories per day
 
-  const adaptiveThermogenesis = 100;
+  const adaptiveThermogenesis = 100; // Adaptive Thermogenesis in calories per day
 
-  const totalCalories = stepCount + averageBMR + averageNEAT + averageTEF + adaptiveThermogenesis;
+  const caloriesBurned = steps + averageBMR + averageNEAT + averageTEF + adaptiveThermogenesis;
 
-  return totalCalories;
+  return caloriesBurned;
 
 }
 
 ```
 
-This function retrieves the number of steps taken today using the `getStepCount()` function and calculates the calories burned based on a reliable formula. It adds the average Basal Metabolic Rate (BMR), Non-Exercise Activity Thermogenesis (NEAT), Thermic Effect of Food (TEF), and Adaptive Thermogenesis to the step count.
+This function calculates the total calories burned by adding the number of steps to the average BMR, NEAT, TEF, and adaptive thermogenesis. The average values used in this example are 1800 calories per day for BMR, 450 calories per day for NEAT, 200 calories per day for TEF, and 100 calories per day for adaptive thermogenesis.
+
+By calling the `getCalories()` function, the system will retrieve the number of steps using the `getStepCount()` function and calculate the calories burned based on the predefined formula.
 
 ![FIT-5](/step2-project-copilot-project/fit-5.png)
 
@@ -242,67 +242,67 @@ Calculate and display the health status score by comparing the heart points  and
 - Press "Complete" button to generate the acceptance criteria.
 - Write a technical reference command:
 ```xml
-<technical-reference>Write a proposal of how to implement the javascript function  to calculate the health status score based on the steps if there are two functions getCaloriesBurned() that provides today's burned calories and getHeartPoints() that provides today's heart points considering 3 possible health status: Excellent, Good and Needs Improvement</technical-reference>
+<technical-reference>Write the javascript function that calculates the health status score based on compare calories consumed in a day and the heart points retrieving these values from these two functions getCaloriesBurned() that provides today's burned calories and getHeartPoints() that provides today's heart points, and return one of these 3 possible health status: Excellent, Good and Needs Improvement</technical-reference>
 ```
 - Press "Complete" button
 #### Final Description:
 User:
 
-As a health-conscious individual, I want to track my health status score to monitor my overall well-being.
+As a health-conscious individual, I want to be able to calculate my health status score.
 
 Action:
 
-I would like to calculate and display my health status score by comparing my heart points and daily calories burned with a healthy goal.
+I want to press a button to calculate and display my health status score by comparing my heart points and daily calories burned with a healthy goal.
 
 Outcome:
 
-By having access to my health status score, I can easily assess my progress towards maintaining a healthy lifestyle. This will enable me to make informed decisions about my diet and exercise routine, ultimately improving my overall health and well-being.
+So I can easily track my progress and determine if I am meeting the recommended guidelines for cardiovascular health. This will help me make informed decisions about my lifestyle and improve my overall well-being.
 
 Note: the average adult requires around 2,000 to 2,500 calories per day to maintain their weight, and based on World Health Organization (WHO) and American Heart Association (AHA) guidelines for cardiovascular health, for a healthy person 150 Heart Points per week is a good score, that is approximately 21 Heart Points per day.
 
 Acceptance Criteria:
 
-1. The user should be able to input their heart points and daily calories burned.
+1. Given that I am a health-conscious individual, when I press the 'Calculate' button, then the system should calculate my health status score.
 
-2. The system should compare the user's heart points and daily calories burned with the healthy goal (150 Heart Points per week and 21 Heart Points per day, and 2,000 to 2,500 calories per day).
+2. Given that I am a health-conscious individual, when I press the 'Calculate' button, then the system should display my health status score.
 
-3. The system should calculate the user's health status score based on the comparison.
+3. Given that I am a health-conscious individual, when I press the 'Calculate' button, then the system should compare my heart points and daily calories burned with a healthy goal.
 
-4. The calculated health status score should be displayed to the user.
+4. Given that I am a health-conscious individual, when I press the 'Calculate' button, then the system should track my progress and determine if I am meeting the recommended guidelines for cardiovascular health.
 
-5. The user should be able to view their health status score at any time.
+5. Given that I am a health-conscious individual, when I press the 'Calculate' button, then the system should help me make informed decisions about my lifestyle and improve my overall well-being.
 
-6. The user's health status score should be updated automatically when new heart points or daily calories burned are inputted.
+6. Given that I am a health-conscious individual, when I press the 'Calculate' button, then the system should calculate my health status score based on the average adult's daily calorie requirement of 2,000 to 2,500 calories.
 
-7. The system should provide a clear indication of the user's progress towards maintaining a healthy lifestyle based on their health status score.
+7. Given that I am a health-conscious individual, when I press the 'Calculate' button, then the system should calculate my health status score based on the recommended guidelines for cardiovascular health, which is 150 Heart Points per week.
 
-8. The user's health status score should be easily understandable and provide meaningful insights.
+8. Given that I am a health-conscious individual, when I press the 'Calculate' button, then the system should calculate my health status score based on the average adult's daily calorie requirement and the recommended guidelines for cardiovascular health.
 
-9. The system should consider the semantically related user stories to enhance the user's experience and provide additional features if applicable.
+9. Given that I am a health-conscious individual, when I press the 'Calculate' button, then the system should display my health status score calculated based on the average adult's daily calorie requirement and the recommended guidelines for cardiovascular health.
 
 Technical Reference:
 
-To calculate the health status score, we can implement a JavaScript function that takes the user's heart points and daily calories burned as input. Here's a proposal for the implementation:
+To calculate the health status score, a JavaScript function can be implemented. The function can retrieve the calories burned in a day using the getCaloriesBurned() function and the heart points using the getHeartPoints() function. The function can then compare these values with the healthy goal of 21 Heart Points per day and the average adult's daily calorie requirement of 2,000 to 2,500 calories. Based on the comparison, the function can return one of the three possible health statuses: Excellent, Good, or Needs Improvement.
 
 ```javascript
 
-function calculateHealthStatusScore(heartPoints, caloriesBurned) {
+function calculateHealthStatusScore() {
 
-  const healthyGoalHeartPointsPerDay = 21;
+  const caloriesBurned = getCaloriesBurned();
 
-  const healthyGoalCaloriesPerDay = 2000;
+  const heartPoints = getHeartPoints();
 
-  const heartPointsScore = heartPoints >= healthyGoalHeartPointsPerDay ? 2 : heartPoints >= healthyGoalHeartPointsPerDay / 2 ? 1 : 0;
+  const healthyGoal = 21;
 
-  const caloriesScore = caloriesBurned <= healthyGoalCaloriesPerDay ? 2 : caloriesBurned <= healthyGoalCaloriesPerDay + 500 ? 1 : 0;
+  const calorieRequirementMin = 2000;
 
-  const healthStatusScore = heartPointsScore + caloriesScore;
+  const calorieRequirementMax = 2500;
 
-  if (healthStatusScore === 4) {
+  if (heartPoints >= healthyGoal && caloriesBurned >= calorieRequirementMin && caloriesBurned <= calorieRequirementMax) {
 
     return 'Excellent';
 
-  } else if (healthStatusScore >= 2) {
+  } else if (heartPoints >= healthyGoal || (caloriesBurned >= calorieRequirementMin && caloriesBurned <= calorieRequirementMax)) {
 
     return 'Good';
 
