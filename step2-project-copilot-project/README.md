@@ -169,7 +169,7 @@ Press a button and retrieve today number of steps and calculate and display the 
 - Press "Complete" button 2 times
 - Write a technical reference command:
 ```xml
-<technical-reference>Write a proposal of how to implement the javascript function to calculate the calories based on the steps if there is a function getStepCount() that returns today’s number of user steps. Add to the total calories the average BMR: 1,800 calories per day,  average NEAT: 450 calories per day , average TEF: 200 calories per day, and adaptive Thermogenesis 100 calories per day. Write the function getCalories()</technical-reference>
+<technical-reference>Write a proposal of how to implement the javascript function to calculate the calories based on the steps for an average person (steps * 0.05), if there is a function getStepCount() that returns today’s number of user steps. Add to the total calories the average BMR: 1,800 calories per day,  average NEAT: 450 calories per day , average TEF: 200 calories per day, and adaptive Thermogenesis 100 calories per day. Write the function getCalories()</technical-reference>
 ```
 - Press "Complete" button
 #### Final Description:
@@ -199,33 +199,35 @@ Acceptance Criteria:
 
 Technical Reference:
 
-To implement the JavaScript function to calculate the calories based on the steps, we can use the following approach:
+To implement the JavaScript function to calculate the calories based on the steps for an average person, we can use the following code:
 
 ```javascript
 
 function getCalories() {
 
-  const steps = getStepCount(); // Assuming there is a function getStepCount() that returns today's number of user steps
+  const steps = getStepCount();
 
-  const averageBMR = 1800; // Average Basal Metabolic Rate (BMR) in calories per day
+  const caloriesFromSteps = steps * 0.05;
 
-  const averageNEAT = 450; // Average Non-Exercise Activity Thermogenesis (NEAT) in calories per day
+  const averageBMR = 1800;
 
-  const averageTEF = 200; // Average Thermic Effect of Food (TEF) in calories per day
+  const averageNEAT = 450;
 
-  const adaptiveThermogenesis = 100; // Adaptive Thermogenesis in calories per day
+  const averageTEF = 200;
 
-  const caloriesBurned = steps + averageBMR + averageNEAT + averageTEF + adaptiveThermogenesis;
+  const adaptiveThermogenesis = 100;
 
-  return caloriesBurned;
+  const totalCalories = caloriesFromSteps + averageBMR + averageNEAT + averageTEF + adaptiveThermogenesis;
+
+  return totalCalories;
 
 }
 
 ```
 
-This function calculates the total calories burned by adding the number of steps to the average BMR, NEAT, TEF, and adaptive thermogenesis. The average values used in this example are 1800 calories per day for BMR, 450 calories per day for NEAT, 200 calories per day for TEF, and 100 calories per day for adaptive thermogenesis.
+This function uses the `getStepCount()` function to retrieve the number of steps taken today and calculates the calories burned based on that number. It then adds the average Basal Metabolic Rate (BMR), Non-Exercise Activity Thermogenesis (NEAT), Thermic Effect of Food (TEF), and Adaptive Thermogenesis to the total calories burned. The function returns the total calories.
 
-By calling the `getCalories()` function, the system will retrieve the number of steps using the `getStepCount()` function and calculate the calories burned based on the predefined formula.
+This implementation assumes that the `getStepCount()` function is already implemented and returns today's number of user steps.
 
 ![FIT-5](/step2-project-copilot-project/fit-5.png)
 
