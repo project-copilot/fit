@@ -5,7 +5,7 @@ This CodeLab is a brief tutorial on how to utilize https://projectcopilot.co/ an
 
 ## Introduction to Project Copilot
 
-[![Project Copilot](http://img.youtube.com/vi/2m4d0exOH1U/0.jpg)](https://www.youtube.com/watch?v=2m4d0exOH1U "User Story Improvement on JIRA with Project Copilot's Custom Instructions")
+[![Project Copilot](http://img.youtube.com/vi/Uj0r2KoQtzQ/0.jpg)](https://www.youtube.com/watch?v=Uj0r2KoQtzQ "Introduction to Project Copilot, an AI Assistant to Improve Project Management in Jira")
 
 ### The Advantages of Project Copilot
 - With Project Copilot, receive assistance from an Artificial Intelligence system designed to enhance your Epics, User Stories, and Subtasks:
