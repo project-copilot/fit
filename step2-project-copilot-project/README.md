@@ -10,7 +10,9 @@ Below are the enhanced epics and their corresponding stories:
 Implement authentication and authorization using Google APIs. The goal is to enable users to access their Google Fit data in order to gain insights into their status and progress.
 #### Actions in Project Copilot:
 - Write custom instruction:
-    - _Instruction: Improve this Epic that this a project to create a simple html and javascript client side app_
+```xml
+<instruction>Improve this Epic that this a project to create a simple html and javascript client side app</instruction>
+```
 - Press "Complete" button
 #### Final description:
 Implement authentication and authorization using Google APIs to create a simple HTML and JavaScript client-side app. The goal is to enable users to access their Google Fit data in order to gain insights into their status and progress.
@@ -24,7 +26,9 @@ Implement authentication and authorization using Google APIs to create a simple 
 Analyze Google Fit data to calculate calories consumed and progress in health status.
 #### Actions in Project Copilot:
 - Write custom instruction:
-    - _Instruction: Clarify that calories consumed are based on number of steps only, and progress is calculated based on heart points_
+```xml
+<instruction>Clarify that calories consumed are based on number of steps only, and progress is calculated based on heart points</instruction>
+```
 - Press "Complete" button
 #### Final Description:
 Analyze Google Fit data to calculate calories consumed and progress in health status. This epic will involve processing the user's step count data to determine the number of calories burned. Additionally, it will utilize heart point data to track the user's progress in achieving their health goals.
@@ -40,7 +44,9 @@ Set up a project in the Google Cloud Console, enable the Fitness API, and obtain
 #### Actions in Project Copilot:
 - Press "Complete" button 2 times
 - Write custom instruction:
-    - _Instruction: Replace user with developer in the acceptance criteria_
+```xml
+<instruction>Replace user with developer in the acceptance criteria</instruction>
+```
 - Press "Complete" button
 #### Final Description:
 User:
@@ -80,7 +86,9 @@ Add and set up the JavaScript client to authenticate the user, enabling them to 
 #### Actions in Project Copilot:
 - Press "Complete" button 2 times
 - Write custom instructtion:
-    - _Instruction: Add the requirement of validate the javascript client by retrieving today’s number of steps_
+```xml
+<instruction>Add the requirement of validate the javascript client by retrieving today’s number of steps</instruction>
+```
 - Press "Complete" button
 #### Final Description:
 User:
