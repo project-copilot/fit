@@ -15,6 +15,11 @@ This CodeLab is a brief tutorial on how to utilize https://projectcopilot.co/ an
 
 [![Project Copilot](http://img.youtube.com/vi/2m4d0exOH1U/0.jpg)](https://www.youtube.com/watch?v=2m4d0exOH1U "User Story Improvement on JIRA with Project Copilot's Custom Instructions")
 
+UPDATED: To utilize custom instructions, you must enclose the instruction within these two elements: 
+```xml
+<instruction> </instruction>
+```
+
 ## How Project Copilot Protects and Safeguards Your Project Information
 
 [![Project Copilot](http://img.youtube.com/vi/duNmcSjIxNA/0.jpg)](https://www.youtube.com/watch?v=duNmcSjIxNA "User Story Improvement on JIRA with Project Copilot's Custom Instructions")
