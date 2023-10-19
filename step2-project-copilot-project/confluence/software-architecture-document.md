@@ -18,12 +18,12 @@ The main goal is to implement a small project in 10 hours without AI assistant t
 
 #### Architecture Diagram
 
-´´´mermaid
+```mermaid
 graph TD
     A[User] --> B[Fitness Tracker App]
     B --> C[Google Fit API]
     C --> D[User Fitness Data]
-´´´
+```
 
 The app architecture consists of:
 * **User**: Interacts with the Fitness Tracker app via the browser
@@ -55,14 +55,14 @@ Key libraries used:
 
 The components are structured as follows:
 
-´´´mermaid
+```mermaid
 graph TD
     A[index.html] --> B[styles.css]
     A --> C[app.js]
     C --> D[api.js]
     C --> E[metrics.js]
     C --> F[views.js]
-´´´
+```
 
 #### Testing Strategy
 Testing focuses on:
