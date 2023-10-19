@@ -17,57 +17,41 @@ Press a button and retrieve today number of steps and calculate and display the 
 - Press "Complete" button
 ## Final Description:
 User:
-
-As a fitness enthusiast, I want to track the number of steps I take in a day and calculate the calories burned.
+As a fitness enthusiast, I want to calculate today's calories burned based on the number of steps I have taken.
 
 Action:
-
-I want to press a button to retrieve the number of steps I have taken today and calculate the calories burned based on that number.
+I would like to press a button to retrieve the number of steps I have taken today. Then, I expect the system to calculate and display the calories burned throughout the day.
 
 Outcome:
-
-So I can see the total calories burned for the day, which will help me track my fitness progress and make informed decisions about my diet and exercise routine.
+By implementing this feature, I will be able to track and monitor my daily calorie expenditure based on the number of steps I have taken. This will provide me with valuable information to help me achieve my fitness goals and maintain a healthy lifestyle.
 
 Acceptance Criteria:
+1. The system should provide a button for the user to retrieve the number of steps they have taken today, allowing them to track their physical activity.
+2. The system should calculate the calories burned throughout the day based on the number of steps retrieved, providing the user with an estimation of their calorie expenditure.
+3. The system should display the calculated calories burned to the user, enabling them to monitor their daily calorie expenditure.
+4. The system should ensure that the calculation of calories burned is accurate and based on a reliable algorithm or formula.
+5. The system should update the calculated calories burned in real-time as the user retrieves the number of steps, providing them with up-to-date information.
+6. The system should consider the user's personal information, such as weight and height, if applicable, to improve the accuracy of the calorie calculation.
+7. The system should provide a clear and user-friendly interface for the user to view the calculated calories burned, ensuring ease of use and understanding.
+8. The system should store the calculated calories burned for future reference or analysis, allowing the user to track their progress over time.
+9. The system should ensure the privacy and security of the user's personal information, adhering to relevant data protection regulations.
+10. The system should provide an option for the user to reset or clear the calculated calories burned, allowing them to start tracking from zero if desired.
 
-1. Given that I am a fitness enthusiast, when I press the button to retrieve the number of steps I have taken today, then the system should display the total number of steps taken.
+Technical Reference: 
 
-2. Given that I am a fitness enthusiast, when I press the button to calculate the calories burned, then the system should use the number of steps taken to calculate the calories burned.
-
-3. Given that I am a fitness enthusiast, when the system calculates the calories burned, then it should use a predefined formula or algorithm to accurately calculate the calories burned based on the number of steps.
-
-4. Given that I am a fitness enthusiast, when the system displays the total calories burned for the day, then it should show the calculated value in a clear and easily readable format.
-
-5. Given that I am a fitness enthusiast, when I view the total calories burned for the day, then it should help me track my fitness progress and make informed decisions about my diet and exercise routine.
-
-Technical Reference:
-
-To implement the JavaScript function to calculate the calories based on the steps for an average person, we can use the following code:
+Proposal for the JavaScript function to calculate calories based on steps for an average person:
 
 ```javascript
-
 function getCalories() {
+const steps = getStepCount(); // Function to retrieve the number of steps
+const averageBMR = 1800; // Average Basal Metabolic Rate
+const averageNEAT = 450; // Average Non-Exercise Activity Thermogenesis
+const averageTEF = 200; // Average Thermic Effect of Food
+const adaptiveThermogenesis = 100; // Average Adaptive Thermogenesis
+const caloriesPerStep = 0.05; // Average calories burned per step
 
-  const steps = getStepCount();
+const totalCalories = (steps * caloriesPerStep) + averageBMR + averageNEAT + averageTEF + adaptiveThermogenesis;
 
-  const caloriesFromSteps = steps * 0.05;
-
-  const averageBMR = 1800;
-
-  const averageNEAT = 450;
-
-  const averageTEF = 200;
-
-  const adaptiveThermogenesis = 100;
-
-  const totalCalories = caloriesFromSteps + averageBMR + averageNEAT + averageTEF + adaptiveThermogenesis;
-
-  return totalCalories;
-
+return totalCalories;
 }
-
 ```
-
-This function uses the `getStepCount()` function to retrieve the number of steps taken today and calculates the calories burned based on that number. It then adds the average Basal Metabolic Rate (BMR), Non-Exercise Activity Thermogenesis (NEAT), Thermic Effect of Food (TEF), and Adaptive Thermogenesis to the total calories burned. The function returns the total calories.
-
-This implementation assumes that the `getStepCount()` function is already implemented and returns today's number of user steps.

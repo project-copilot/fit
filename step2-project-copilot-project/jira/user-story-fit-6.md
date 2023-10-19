@@ -15,38 +15,23 @@ Calculate and display the health status score by comparing the heart points and 
 - Press "Complete" button
 ## Final Description:
 User:
-
-As a health-conscious individual, I want to be able to calculate my health status score.
+As a health-conscious individual, I want to calculate my health status score.
 
 Action:
-
-I want to press a button to calculate and display my health status score by comparing my heart points and daily calories burned with a healthy goal.
+I would like the system to calculate and display my health status score by comparing my heart points and daily calories burned with a healthy goal.
 
 Outcome:
-
-So I can easily track my progress and determine if I am meeting the recommended guidelines for cardiovascular health. This will help me make informed decisions about my lifestyle and improve my overall well-being.
-
-Note: the average adult requires around 2,000 to 2,500 calories per day to maintain their weight, and based on World Health Organization (WHO) and American Heart Association (AHA) guidelines for cardiovascular health, for a healthy person 150 Heart Points per week is a good score, that is approximately 21 Heart Points per day.
+By providing a health status score, I will be able to assess and track my overall health and fitness level. This score will be determined by comparing my heart points and daily calories burned with a healthy goal, allowing me to understand how well I am meeting my health objectives. This feature will provide valuable insights and motivation for maintaining a healthy lifestyle.
 
 Acceptance Criteria:
-
-1. Given that I am a health-conscious individual, when I press the 'Calculate' button, then the system should calculate my health status score.
-
-2. Given that I am a health-conscious individual, when I press the 'Calculate' button, then the system should display my health status score.
-
-3. Given that I am a health-conscious individual, when I press the 'Calculate' button, then the system should compare my heart points and daily calories burned with a healthy goal.
-
-4. Given that I am a health-conscious individual, when I press the 'Calculate' button, then the system should track my progress and determine if I am meeting the recommended guidelines for cardiovascular health.
-
-5. Given that I am a health-conscious individual, when I press the 'Calculate' button, then the system should help me make informed decisions about my lifestyle and improve my overall well-being.
-
-6. Given that I am a health-conscious individual, when I press the 'Calculate' button, then the system should calculate my health status score based on the average adult's daily calorie requirement of 2,000 to 2,500 calories.
-
-7. Given that I am a health-conscious individual, when I press the 'Calculate' button, then the system should calculate my health status score based on the recommended guidelines for cardiovascular health, which is 150 Heart Points per week.
-
-8. Given that I am a health-conscious individual, when I press the 'Calculate' button, then the system should calculate my health status score based on the average adult's daily calorie requirement and the recommended guidelines for cardiovascular health.
-
-9. Given that I am a health-conscious individual, when I press the 'Calculate' button, then the system should display my health status score calculated based on the average adult's daily calorie requirement and the recommended guidelines for cardiovascular health.
+1. The system should calculate the user's health status score based on their heart points and daily calories burned.
+2. The system should compare the user's heart points and daily calories burned with a healthy goal to determine their health status score.
+3. The system should display the calculated health status score to the user.
+4. The health status score should provide an assessment of the user's overall health and fitness level.
+5. The health status score should serve as a tool for the user to track their progress and understand how well they are meeting their health objectives.
+6. The system should provide valuable insights and motivation for the user to maintain a healthy lifestyle.
+7. The calculated health status score should be based on accurate and reliable calculations.
+8. The system should ensure that the user's heart points and daily calories burned are recorded accurately to calculate the health status score.
 
 Technical Reference:
 
