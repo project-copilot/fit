@@ -18,6 +18,7 @@ I will set up a project in the Google Cloud Console and enable the Fitness API. 
 
 Outcome:
 By completing these steps, I will have a Google Project with the Fitness API enabled. This will allow me to access and utilize the Fitness API's functionality, such as retrieving fitness data and integrating it into my application. The OAuth 2.0 client ID and API key will provide the necessary authentication and authorization for accessing the Fitness API securely.
+
 Acceptance Criteria:
 1. The developer should be able to set up a project in the Google Cloud Console.
 2. The developer should be able to enable the Google Fitness API for the created project.
@@ -26,3 +27,5 @@ Acceptance Criteria:
 5. The developer should be able to retrieve fitness data using the Fitness API.
 6. The developer should be able to integrate the retrieved fitness data into their application.
 7. The OAuth 2.0 client ID and API key should provide secure authentication and authorization for accessing the Fitness API.
+
+[![User Story 1](http://img.youtube.com/vi/SCoq1Olo3E0/0.jpg)](https://www.youtube.com/watch?v=SCoq1Olo3E0 "User Story 1")
