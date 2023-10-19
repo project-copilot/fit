@@ -9,11 +9,7 @@ Add and set up the JavaScript client to authenticate the user, enabling them to 
 [Technical Reference: Google Identity Service JavaScript library](/step2-project-copilot-project/confluence/technical-reference-gis.md)
 ## Actions in Project Copilot:
 - Press "Complete" button 2 times
-- Write custom instructtion:
-```xml
-<instruction>Add the requirement of validate the javascript client by retrieving today’s number of steps</instruction>
-```
-- Press "Complete" button
+
 ## Final Description:
 User:
 
@@ -51,6 +47,7 @@ Technical Reference:
 
 Sample code to retrieve user steps:
 
+```javascript
     function getStepCount() {
         return new Promise((resolve, reject) => {
           var startTimeMillis = new Date().setHours(0, 0, 0, 0); // Start time for today
@@ -86,5 +83,6 @@ Sample code to retrieve user steps:
           xhr.send(JSON.stringify(requestBody));
         });
       }
+```
 
 _Note: In this user story, the Tech Reference is authored by the user after AI assistance generates the user story and acceptance criteria. Is it feasible to automatically generate the Technical Reference by employing the custom command 'Technical Reference:' in italics. This process works seamlessly when there is a similar user story with a matching Technical Reference or when a Technical Design Document from Confluence is linked to the user story._

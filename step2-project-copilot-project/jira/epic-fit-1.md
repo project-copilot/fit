@@ -13,4 +13,4 @@ Implement authentication and authorization using Google APIs. The goal is to ena
 ```
 - Press "Complete" button
 ## Final description:
-Implement authentication and authorization using Google APIs to create a simple HTML and JavaScript client-side app. The goal is to enable users to access their Google Fit data in order to gain insights into their status and progress.
+Implement authentication and authorization using Google APIs. The goal is to enable users to access their Google Fit data in order to gain insights into their status and progress. This epic will involve configuring the OAuth consent screen, setting up the Google API client ID, and utilizing the Google Identity Service JavaScript library for authentication and authorization.

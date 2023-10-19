@@ -9,34 +9,20 @@ Set up a project in the Google Cloud Console, enable the Fitness API, and obtain
 [Technical Reference: Google Identity Service JavaScript library](/step2-project-copilot-project/confluence/technical-reference-gis.md)
 ## Actions in Project Copilot:
 - Press "Complete" button 2 times
-- Write custom instruction:
-```xml
-<instruction>Replace user with developer in the acceptance criteria</instruction>
-```
-- Press "Complete" button
 ## Final Description:
 User:
-
-As a developer, I want to create a Google project and enable the Google Fitness API.
+As a developer, I need to create a Google Project and enable the Google Fitness API.
 
 Action:
-
 I will set up a project in the Google Cloud Console and enable the Fitness API. Additionally, I will obtain an OAuth 2.0 client ID and API key.
 
 Outcome:
-
-By completing these actions, I will have a Google project set up with the Fitness API enabled. I will also have the necessary credentials (client ID and API key) to access and use the Fitness API in my application.
-
+By completing these steps, I will have a Google Project with the Fitness API enabled. This will allow me to access and utilize the Fitness API's functionality, such as retrieving fitness data and integrating it into my application. The OAuth 2.0 client ID and API key will provide the necessary authentication and authorization for accessing the Fitness API securely.
 Acceptance Criteria:
-
-1. The developer should be able to create a Google project in the Google Cloud Console.
-
-2. The developer should be able to enable the Google Fitness API in the created Google project.
-
-3. The developer should be able to obtain an OAuth 2.0 client ID and API key after setting up the Google project and enabling the Fitness API.
-
-4. The developer should have the necessary credentials (client ID and API key) to access and use the Fitness API in their application.
-
-### Technical reference:
-Simple way to deploy the app in a local enviroment using python: python -m http.server
-Tool for debug Chrome DevTools
+1. The developer should be able to set up a project in the Google Cloud Console.
+2. The developer should be able to enable the Google Fitness API for the created project.
+3. The developer should obtain an OAuth 2.0 client ID and API key for authentication and authorization purposes.
+4. The Google Project should have the Fitness API enabled, allowing the developer to access its functionality.
+5. The developer should be able to retrieve fitness data using the Fitness API.
+6. The developer should be able to integrate the retrieved fitness data into their application.
+7. The OAuth 2.0 client ID and API key should provide secure authentication and authorization for accessing the Fitness API.
