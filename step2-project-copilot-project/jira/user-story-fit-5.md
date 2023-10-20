@@ -56,4 +56,4 @@ return totalCalories;
 }
 ```
 
-[![User Story 3](http://img.youtube.com/vi/CI3KKaVBJfQ/0.jpg)](https://www.youtube.com/watch?v=CI3KKaVBJfQ"User Story 3")
+[![User Story 3](http://img.youtube.com/vi/CI3KKaVBJfQ/0.jpg)](https://www.youtube.com/watch?v=CI3KKaVBJfQ "User Story 3")

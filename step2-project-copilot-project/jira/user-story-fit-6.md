@@ -69,4 +69,4 @@ function calculateHealthStatusScore() {
 
 ```
 
-[![User Story 4](http://img.youtube.com/vi/XRzmQMS8uk0/0.jpg)](https://www.youtube.com/watch?v=XRzmQMS8uk0"User Story 4")
+[![User Story 4](http://img.youtube.com/vi/XRzmQMS8uk0/0.jpg)](https://www.youtube.com/watch?v=XRzmQMS8uk0 "User Story 4")

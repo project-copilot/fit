@@ -87,4 +87,4 @@ Sample code to retrieve user steps:
 
 _Note: In this user story, the Tech Reference is authored by the user after AI assistance generates the user story and acceptance criteria. Is it feasible to automatically generate the Technical Reference by employing the custom command 'Technical Reference:' in italics. This process works seamlessly when there is a similar user story with a matching Technical Reference or when a Technical Design Document from Confluence is linked to the user story._
 
-[![User Story 2](http://img.youtube.com/vi/O_EoTV13C0U/0.jpg)](https://www.youtube.com/watch?v=O_EoTV13C0U"User Story 2")
+[![User Story 2](http://img.youtube.com/vi/O_EoTV13C0U/0.jpg)](https://www.youtube.com/watch?v=O_EoTV13C0U "User Story 2")
