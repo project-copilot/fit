@@ -2,79 +2,117 @@
 ## Title: Software Architecture Document
 ### Initial content:
 
-.
+#### CodeLab: Fitness App Using Google Fit REST API
 
-### Actions in Project Copilot:
-- Write custom instruction:
-```xml
-<instruction>...</instruction>
-```
-### Final content:
+##### Introduction
 
-#### Introduction
-This project is a small HTML/JavaScript client-side app that consumes the Google Fit REST API to calculate calories and estimate health status based on parameters like calories per day and heart points.
+The CodeLab Fitness App is a simple, client-side web application that provides users with a daily health status score. Using HTML and JavaScript in the client side, the application interacts with Google's Fit REST API from the client side to retrieve step and heartbeat data, calculate daily calorie expenditure based on daily steps, and generate a health status score based on compare daily calorie expenditure and daily hearth points with a standard adult person.
 
-The main goal is to implement a small project in 10 hours without AI assistant tools, and then recreate it using AI tools to generate project documents, code, and tests. This allows us to compare the time, quality, and artifacts produced with and without AI assistance.
+### Actions in Confluence:
+- Publish the page
+- click on **Project Copilot link** in the page
+- Press **Run AI assistant** button
+- Press **Check Status** button until the AI assistant is ready
+- Reload the page
 
-#### Architecture Diagram
+### Updated content:
 
-```mermaid
-graph TD
-    A[User] --> B[Fitness Tracker App]
-    B --> C[Google Fit API]
-    C --> D[User Fitness Data]
-```
+##### Introduction
 
-The app architecture consists of:
-* **User**: Interacts with the Fitness Tracker app via the browser
-* **Fitness Tracker App**: HTML/JS app running in the browser
-    * Calculates health metrics based on API data
-    * Displays metrics and trends to user
-* **Google Fit API**: Provides user fitness data to the app
-* **User Fitness Data**: User's exercise, heartbeat, sleep etc data stored in Google Fit
+The CodeLab Fitness App is a simple, client-side web application that provides users with a daily health status score. Using HTML and JavaScript in the client side, the application interacts with Google's Fit REST API from the client side to retrieve step and heartbeat data, calculate daily calorie expenditure based on daily steps, and generate a health status score based on compare daily calorie expenditure and daily hearth points with a standard adult person.
 
-#### Features
-The core features of the Fitness Tracker app are:
-* Fetch user fitness data from Google Fit API
-* Calculate calories burned per day
-* Calculate average heart points per day
-* Display calories burn and heart points over time
-* Provide basic health recommendations based on metrics
+The application also allows users to set fitness goals, track their progress, and receive personalized recommendations for improving their health and fitness.
+
+### Actions in Confluence:
+- click on **Project Copilot link** in the page
+- Press **Run AI assistant** button
+- Press **Check Status** button until the AI assistant is ready
+- Reload the page
+
+### Updated content:
+
+##### Introduction
+
+The CodeLab Fitness App is a simple, client-side web application that provides users with a daily health status score. Using HTML and JavaScript in the client side, the application interacts with Google's Fit REST API from the client side to retrieve step and heartbeat data, calculate daily calorie expenditure based on daily steps, and generate a health status score based on compare daily calorie expenditure and daily hearth points with a standard adult person.
+
+The application also allows users to set fitness goals, track their progress, and receive personalized recommendations for improving their health and fitness.
+
+The CodeLab Fitness App is designed to be user-friendly and accessible to individuals of all fitness levels. It provides a seamless experience for users to track their daily activities, monitor their health progress, and make informed decisions to improve their overall well-being.
+
+### Actions in Confluence:
+- Add the following text add the end of the page:
+
+##### System Architecture
+
+The CodeLab Fitness App follows a client-side architecture where the client side is responsible for the UI and for handling user interactions and making API calls to Google's Fit REST API.
+
+### Actions in Confluence:
+- click on **UPDATE** button
+- click on **Project Copilot link** in the page
+- Press **Run AI assistant** button
+- Press **Check Status** button until the AI assistant is ready
+- Reload the page
+
+### Updated content:
+
+##### Introduction
+
+The CodeLab Fitness App is a simple, client-side web application that provides users with a daily health status score. Using HTML and JavaScript in the client side, the application interacts with Google's Fit REST API from the client side to retrieve step and heartbeat data, calculate daily calorie expenditure based on daily steps, and generate a health status score based on compare daily calorie expenditure and daily hearth points with a standard adult person.
+
+The application also allows users to set fitness goals, track their progress, and receive personalized recommendations for improving their health and fitness.
+
+The CodeLab Fitness App is designed to be user-friendly and accessible to individuals of all fitness levels. It provides a seamless experience for users to track their daily activities, monitor their health progress, and make informed decisions to improve their overall well-being.
+
+##### System Architecture
+
+The CodeLab Fitness App follows a client-side architecture where the client side is responsible for the UI and for handling user interactions and making API calls to Google's Fit REST API.
+
+The client-side architecture ensures that the application can run on any device with a web browser, making it highly accessible and convenient for users to access their health data and track their fitness goals from anywhere.
+
+### Actions in Confluence:
+- Add the following text add the end of the page:
 
 #### Code Implementation
 The app is implemented in:
-* HTML5 for markup
-* CSS3 for styling
-* JavaScript for logic
-* Google Fit REST API for user data
+- HTML5 for markup
+- CSS3 for styling
+- JavaScript for logic
+- Google Fit REST API for user data
 
-Key libraries used:
-* Google Identity Service JavaScript library: [Using the token model  |  Authorization  |  Google for Developers](https://developers.google.com/identity/oauth2/web/guides/use-token-model)
-* Chart.js for data visualizations
-* Moment.js for date manipulation
+#### Deployment
 
-The components are structured as follows:
+### Actions in Confluence:
+- click on **UPDATE** button
+- click on **Project Copilot link** in the page
+- Press **Run AI assistant** button
+- Press **Check Status** button until the AI assistant is ready
+- Reload the page
 
-```mermaid
-graph TD
-    A[index.html] --> B[styles.css]
-    A --> C[app.js]
-    C --> D[api.js]
-    C --> E[metrics.js]
-    C --> F[views.js]
-```
+### Final content:
 
-#### Testing Strategy
-Testing focuses on:
-* Unit testing critical modules like metrics and API clients
-* Validating UI and interactions with Selenium
-* Integration testing end-to-end flows
-* Performance testing with realistic datasets
+##### Introduction
 
-#### Next Steps
-Future iterations could enhance the app by:
-* Adding user accounts and persistence
-* Supporting more fitness data sources
-* Predicting future metrics based on trends
-* Gamifying goals and health outcomes
-* Building mobile apps and synchronizing across devices
+The CodeLab Fitness App is a simple, client-side web application that provides users with a daily health status score. Using HTML and JavaScript in the client side, the application interacts with Google's Fit REST API from the client side to retrieve step and heartbeat data, calculate daily calorie expenditure based on daily steps, and generate a health status score based on compare daily calorie expenditure and daily hearth points with a standard adult person.
+
+The application also allows users to set fitness goals, track their progress, and receive personalized recommendations for improving their health and fitness.
+
+The CodeLab Fitness App is designed to be user-friendly and accessible to individuals of all fitness levels. It provides a seamless experience for users to track their daily activities, monitor their health progress, and make informed decisions to improve their overall well-being.
+
+##### System Architecture
+
+The CodeLab Fitness App follows a client-side architecture where the client side is responsible for the UI and for handling user interactions and making API calls to Google's Fit REST API.
+
+The client-side architecture ensures that the application can run on any device with a web browser, making it highly accessible and convenient for users to access their health data and track their fitness goals from anywhere.
+
+### Actions in Confluence:
+- Add the following text add the end of the page:
+
+#### Code Implementation
+The app is implemented in:
+- HTML5 for markup
+- CSS3 for styling
+- JavaScript for logic
+- Google Fit REST API for user data
+
+#### Deployment
+The CodeLab Fitness App can be deployed on any web server that supports HTML, CSS, and JavaScript. It does not require any server-side processing or database storage, as all the data is retrieved and processed on the client side using Google's Fit REST API.

@@ -2,7 +2,7 @@
 ## Title: Technical Reference: Technical Reference: Fitness Formulas
 ### Initial content:
 
-.
+
 
 ### Actions in Project Copilot:
 - Write custom instruction:
