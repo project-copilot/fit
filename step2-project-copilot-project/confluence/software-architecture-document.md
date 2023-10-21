@@ -12,8 +12,16 @@ The CodeLab Fitness App is a simple, client-side web application that provides u
 - Publish the page
 - click on **Project Copilot link** in the page
 - Press **Run AI assistant** button
+    - Screen shot of the AI assistant running
+    ![AI assistant running](/step2-project-copilot-project/confluence/project-copilot-confluence-link.png)
+
 - Press **Check Status** button until the AI assistant is ready
+    - Screen shot of the AI assistant getting status of the task
+    ![AI assistant check status](/step2-project-copilot-project/confluence/project-copilot-confluence-checkstatus.png)
+
 - Reload the page
+    - Screen shot of the AI assistant ready
+    ![AI assistant ready](/step2-project-copilot-project/confluence/project-copilot-confluence-reload.png)
 
 ### Updated content:
 
