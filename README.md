@@ -15,7 +15,7 @@ This CodeLab is a brief tutorial on how to utilize https://projectcopilot.co/ an
 
 [![Project Copilot](http://img.youtube.com/vi/2m4d0exOH1U/0.jpg)](https://www.youtube.com/watch?v=2m4d0exOH1U "User Story Improvement on JIRA with Project Copilot's Custom Instructions")
 
-UPDATED: To utilize custom instructions, you must enclose the instruction within these two elements: 
+_To utilize custom instructions, you must enclose the instruction within these two elements:_
 ```xml
 <instruction> </instruction>
 ```
@@ -32,7 +32,7 @@ UPDATED: To utilize custom instructions, you must enclose the instruction within
 ```mermaid
 flowchart TD
     A[Atlassian Knowledge Graph] -->|Get context| B(Project Copilot)
-    L[Epic/User Story/SubTask] -->|Draft & Commands| B(Project Copilot)
+    L[Document/Epic/User Story/SubTask] -->|Draft & Commands| B(Project Copilot)
     B --> C{Prompt Expert Engine}
     C -->|Improved| D[Epic/User Story/SubTask]
 ```
@@ -52,11 +52,11 @@ flowchart TD
 ```mermaid
 flowchart TD
     A[Atlassian Knowledge Graph] -->|Get context| B(Project Copilot)
-    L[Jira Epic/User Story/SubTask] -->|Jira User Draft & Commands| B(Project Copilot)
+    L[Document/Epic/User Story/SubTask] -->|User Draft & Commands| B(Project Copilot)
     B --> C{Prompt Expert Engine}
-    C -->|Improved| D[Jira Epic/User Story/SubTask]
+    C -->|Improved| D[Document/Epic/User Story/SubTask]
     F[ChatGPT User Draft & Prompt] -->|Get context| G(ChatGPT)
-    G --> H[ChatGPT Epic/User Story/SubTask]
+    G --> H[Document/Epic/User Story/SubTask]
 ```
 
 ### GitHub Copilot
