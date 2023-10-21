@@ -30,7 +30,7 @@ _Note the semantic code description can be generated with one of these third-par
 _In this CodeLab only the Software Architecture Document (SAD) is created using the new Project Copilot for Confluence App:_
 
 #### Software Architecture Document (SAD):
-- link to complete the SAD step by step: [SAD](/step2-project-copilot-project/confluence/software-architecture-document.md)
+- link to complete the SAD step by step using Project Copilot for Confluence App: [SAD](/step2-project-copilot-project/confluence/software-architecture-document.md)
 
 _We have also developed three Technical Reference documents containing information about the Google Fit API, Google Identity Services, and valuable fitness formulas sourced from websites. These documents serve to enhance the context for the user stories in Jira._
 
