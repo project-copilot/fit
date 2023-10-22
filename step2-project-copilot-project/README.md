@@ -33,7 +33,7 @@ _In this CodeLab only the Software Architecture Document (SAD) is created using 
 
 _This document provides a high-level overview of the CodeLab Fitness App, including its purpose, system architecture, and code implementation details. This document was created with the assitance of the alpha version of Project Copilot for Confluence App_
 
-- link to complete the Software Architecture Document step by step using Project Copilot for Confluence App: [Software Architecture Document](/step2-project-copilot-project/confluence/software-architecture-document.md)
+- Follow this link to complete the Software Architecture Document using the Project Copilot for Confluence App, step by step: [Software Architecture Document](/step2-project-copilot-project/confluence/software-architecture-document.md)
 
 _We have also developed three Technical Reference documents containing information about the Google Fit API, Google Identity Services, and valuable fitness formulas sourced from websites. These documents serve to enhance the context for the user stories in Jira._
 
@@ -41,39 +41,39 @@ _We have also developed three Technical Reference documents containing informati
 
 _This document offers a high-level overview of the Google Identity Service JavaScript library. It relies solely on internet information, with no AI assistance utilized in this instance._
 
-- link: [Technical Reference: Google Identity Service JavaScript library](/step2-project-copilot-project/confluence/technical-reference-gis.md)
+- Link: [Technical Reference: Google Identity Service JavaScript library](/step2-project-copilot-project/confluence/technical-reference-gis.md)
 
 #### Technical Reference: Google FIT Rest API
 
 _This document offers a high-level overview of the Google FIT Rest API. It relies solely on internet information, with no AI assistance utilized in this instance._
 
-- link: [Technical Reference: Google FIT Rest API](/step2-project-copilot-project/confluence/technical-reference-google-fit-rest-api.md)
+- Link: [Technical Reference: Google FIT Rest API](/step2-project-copilot-project/confluence/technical-reference-google-fit-rest-api.md)
 
 #### Technical Reference: Fitness Formulas
 
 _This document offers a high-level overview of the fitness formulas used in the CodeLab Fitness App. It relies solely on internet information, with no AI assistance utilized in this instance._
 
-- link: [Technical Reference: Fitness Formulas](/step2-project-copilot-project/confluence/technical-reference-fitness-formulas.md)
+- Link: [Technical Reference: Fitness Formulas](/step2-project-copilot-project/confluence/technical-reference-fitness-formulas.md)
 
 ### Jira Project
 
 ### Epics:
 #### Epic 1: Security and Authentication on Google Fit
-- link: [Epic 1](/step2-project-copilot-project/jira/epic-fit-1.md)
+- Follow this link to complete the Epic 1 using the Project Copilot for Jira App, step by step:[Epic 1](/step2-project-copilot-project/jira/epic-fit-1.md)
 
 #### Epic 2: Analyze and process Google Fit data
-- link: [Epic 2](/step2-project-copilot-project/jira/epic-fit-2.md)
+- Follow this link to complete the Epic 2 using the Project Copilot for Jira App, step by step: [Epic 2](/step2-project-copilot-project/jira/epic-fit-2.md)
 
 ### User stories:
 
 #### User story 1: Create a Google Project and enable Google Fitness API
-- link [User story 1](/step2-project-copilot-project/jira/user-story-fit-3.md)
+- Follow this link to complete the User Story 1 using the Project Copilot for Jira App, step by step: [User story 1](/step2-project-copilot-project/jira/user-story-fit-3.md)
 
 #### User story 2: Add the authentication to access the Google Fitness API
-- link [User story 2](/step2-project-copilot-project/jira/user-story-fit-4.md)
+- Follow this link to complete the User Story 2 using the Project Copilot for Jira App, step by step:  [User story 2](/step2-project-copilot-project/jira/user-story-fit-4.md)
 
 #### User story 3: Calculate today's calories burned based on the number of steps
-- link [User story 3](/step2-project-copilot-project/jira/user-story-fit-5.md)
+- Follow this link to complete the User Story 3 using the Project Copilot for Jira App, step by step:  [User story 3](/step2-project-copilot-project/jira/user-story-fit-5.md)
 
 #### User story 4: Calculate my health status score
-- link [User story 4](/step2-project-copilot-project/jira/user-story-fit-6.md)
+- Follow this link to complete the User Story 4 using the Project Copilot for Jira App, step by step:  [User story 4](/step2-project-copilot-project/jira/user-story-fit-6.md)
