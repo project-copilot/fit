@@ -1,6 +1,8 @@
 # CodeLab: Creating a Fitness App Using Project Copilot and GitHub Copilot
 ## Step 2: Project Planning using Project Copilot
 
+_Note: This step in the CodeLab is designed not only as an introduction to Project Copilot but also as a guide for learning how to use it._
+
 ### Use the following link to install the new Alpha version of Project Copilot App for Confluence:
 
 [Project Copilot for confluence Alpha version 0.1](https://developer.atlassian.com/console/install/8a93e156-3682-44f1-a179-d03e01379de2?signature=4e995d26b6bb159474223be4c8018b55e06a8a1a6571e03f50ecdf866ac31eb5ad0a567d47d904c9d65b59d1f44a76d37561e34d4ee0f4fa64d204c73e6203b2&product=confluence)
