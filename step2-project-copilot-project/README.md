@@ -30,19 +30,28 @@ _Note the semantic code description can be generated with one of these third-par
 _In this CodeLab only the Software Architecture Document (SAD) is created using the new Project Copilot for Confluence App:_
 
 #### Software Architecture Document (SAD):
+
+_This document provides a high-level overview of the CodeLab Fitness App, including its purpose, system architecture, and code implementation details. This document was created with the assitance of the alpha version of Project Copilot for Confluence App_
+
 - link to complete the SAD step by step using Project Copilot for Confluence App: [SAD](/step2-project-copilot-project/confluence/software-architecture-document.md)
 
 _We have also developed three Technical Reference documents containing information about the Google Fit API, Google Identity Services, and valuable fitness formulas sourced from websites. These documents serve to enhance the context for the user stories in Jira._
 
 #### Technical Reference: Google Identity Service JavaScript library
 
+_This document offers a high-level overview of the Google Identity Service JavaScript library. It relies solely on internet information, with no AI assistance utilized in this instance._
+
 - link: [Technical Reference: Google Identity Service JavaScript library](/step2-project-copilot-project/confluence/technical-reference-gis.md)
 
 #### Technical Reference: Google FIT Rest API
 
+_This document offers a high-level overview of the Google FIT Rest API. It relies solely on internet information, with no AI assistance utilized in this instance._
+
 - link: [Technical Reference: Google FIT Rest API](/step2-project-copilot-project/confluence/technical-reference-google-fit-rest-api.md)
 
 #### Technical Reference: Fitness Formulas
+
+_This document offers a high-level overview of the fitness formulas used in the CodeLab Fitness App. It relies solely on internet information, with no AI assistance utilized in this instance._
 
 - link: [Technical Reference: Fitness Formulas](/step2-project-copilot-project/confluence/technical-reference-fitness-formulas.md)
 

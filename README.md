@@ -7,22 +7,6 @@ This CodeLab is a brief tutorial on how to utilize https://projectcopilot.co/ an
 
 [![Project Copilot](http://img.youtube.com/vi/Uj0r2KoQtzQ/0.jpg)](https://www.youtube.com/watch?v=Uj0r2KoQtzQ "Introduction to Project Copilot, an AI Assistant to Improve Project Management in Jira")
 
-## Creating User Stories with the Beta Version of Project Copilot on JIRA
-
-[![Project Copilot](http://img.youtube.com/vi/oa7LKD3SgQY/0.jpg)](https://www.youtube.com/watch?v=oa7LKD3SgQY "Creating User Stories with the Beta Version of Project Copilot on JIRA")
-
-## User Story Improvement on JIRA with Project Copilot's Custom Instructions
-
-[![Project Copilot](http://img.youtube.com/vi/2m4d0exOH1U/0.jpg)](https://www.youtube.com/watch?v=2m4d0exOH1U "User Story Improvement on JIRA with Project Copilot's Custom Instructions")
-
-_To utilize custom instructions, you must enclose the instruction within these two elements:_
-```xml
-<instruction> </instruction>
-```
-
-## How Project Copilot Protects and Safeguards Your Project Information
-
-[![Project Copilot](http://img.youtube.com/vi/duNmcSjIxNA/0.jpg)](https://www.youtube.com/watch?v=duNmcSjIxNA "User Story Improvement on JIRA with Project Copilot's Custom Instructions")
 
 ### The Advantages of Project Copilot
 - With Project Copilot, receive assistance from an Artificial Intelligence system designed to enhance your Epics, User Stories, and Subtasks:

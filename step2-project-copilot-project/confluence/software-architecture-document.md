@@ -11,9 +11,9 @@ The CodeLab Fitness App is a simple, client-side web application that provides u
 ### Actions in Confluence:
 - Publish the page
 - click on **Project Copilot link** in the page
-- Press **Run AI assistant** button
+- Press **Complete** button
     - Screen shot of the AI assistant running
-    ![AI assistant running](/step2-project-copilot-project/confluence/project-copilot-confluence-link.png)
+    ![AI assistant running](/step2-project-copilot-project/confluence/project-copilot-confluence-complete.png)
 
 - Press **Check Status** button until the AI assistant is ready
     - Screen shot of the AI assistant getting status of the task
@@ -33,7 +33,7 @@ The application also allows users to set fitness goals, track their progress, an
 
 ### Actions in Confluence:
 - click on **Project Copilot link** in the page
-- Press **Run AI assistant** button
+- Press **Complete** button
 - Press **Check Status** button until the AI assistant is ready
 - Reload the page
 
@@ -57,7 +57,7 @@ The CodeLab Fitness App follows a client-side architecture where the client side
 ### Actions in Confluence:
 - click on **UPDATE** button
 - click on **Project Copilot link** in the page
-- Press **Run AI assistant** button
+- Press **Complete** button
 - Press **Check Status** button until the AI assistant is ready
 - Reload the page
 
@@ -92,7 +92,7 @@ The app is implemented in:
 ### Actions in Confluence:
 - click on **UPDATE** button
 - click on **Project Copilot link** in the page
-- Press **Run AI assistant** button
+- Press **Complete** button
 - Press **Check Status** button until the AI assistant is ready
 - Reload the page
 
@@ -124,3 +124,5 @@ The app is implemented in:
 
 #### Deployment
 The CodeLab Fitness App can be deployed on any web server that supports HTML, CSS, and JavaScript. It does not require any server-side processing or database storage, as all the data is retrieved and processed on the client side using Google's Fit REST API.
+
+_Note: Please remember that our goal is to enable users to enhance and edit the content at each step, not only to improve the content itself but also to provide a more meaningful context for the next prediction. Additionally, this is the initial alpha version of our Confluence App. In the upcoming weeks, we will be enhancing our prompt workflows to offer improved assistance._
