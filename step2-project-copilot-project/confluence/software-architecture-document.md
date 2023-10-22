@@ -126,3 +126,5 @@ The app is implemented in:
 The CodeLab Fitness App can be deployed on any web server that supports HTML, CSS, and JavaScript. It does not require any server-side processing or database storage, as all the data is retrieved and processed on the client side using Google's Fit REST API.
 
 _Note: Please remember that our goal is to enable users to enhance and edit the content at each step, not only to improve the content itself but also to provide a more meaningful context for the next prediction. Additionally, this is the initial alpha version of our Confluence App. In the upcoming weeks, we will be enhancing our prompt workflows to offer improved assistance._
+
+[![Software Architecture Document](http://img.youtube.com/vi/JARf2AxsUW0/0.jpg)](https://www.youtube.com/watch?v=JARf2AxsUW0 "Software Architecture Document")
