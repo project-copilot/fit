@@ -57,4 +57,4 @@ return totalCaloriesBurned;
 
 [![User Story 3 - Step 1](http://img.youtube.com/vi/AWyS-uvkR-Y/0.jpg)](https://www.youtube.com/watch?v=AWyS-uvkR-Y "User Story 3 - Step 1")
 
-[![User Story 3 - Step 2](http://img.youtube.com/zOTJbq7Brmg/0.jpg)](https://www.youtube.com/watch?v=zOTJbq7Brmg "User Story 3 - Step 2")
+[![User Story 3 - Step 2](http://img.youtube.com/vi/zOTJbq7Brmg/0.jpg)](https://www.youtube.com/watch?v=zOTJbq7Brmg "User Story 3 - Step 2")
