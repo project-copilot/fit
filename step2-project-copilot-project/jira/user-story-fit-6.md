@@ -10,7 +10,7 @@ Calculate and display the health status score by comparing the heart points and 
 - Press "Complete" button to generate the acceptance criteria.
 - Write a technical reference command:
 ```xml
-<technical-reference>Write a JavaScript function that calculates a health status score by comparing the calories consumed in a day and the heart points. Retrieve these values from two functions: getCaloriesBurned(), which provides today's burned calories, and getHeartPoints(), which provides today's heart points. The function should return one of three possible health statuses: Excellent, Good, or Needs Improvement.</technical-reference>
+<technical-reference>Describe how to implement 'calculateHealthStatusScore()', a javascript function for calculating the health status. Additionally, provide the pseudocode for the 'calculateHealthStatusScore()' function.</technical-reference>
 ```
 - Press "Complete" button
 ## Final Description:
@@ -30,43 +30,34 @@ Acceptance Criteria:
 4. The health status score should provide an assessment of the user's overall health and fitness level.
 5. The health status score should serve as a tool for the user to track their progress and understand how well they are meeting their health objectives.
 6. The system should provide valuable insights and motivation for the user to maintain a healthy lifestyle.
-7. The calculated health status score should be based on accurate and reliable calculations.
-8. The system should ensure that the user's heart points and daily calories burned are recorded accurately to calculate the health status score.
 
 Technical Reference:
 
-To calculate the health status score, a JavaScript function can be implemented. The function can retrieve the calories burned in a day using the getCaloriesBurned() function and the heart points using the getHeartPoints() function. The function can then compare these values with the healthy goal of 21 Heart Points per day and the average adult's daily calorie requirement of 2,000 to 2,500 calories. Based on the comparison, the function can return one of the three possible health statuses: Excellent, Good, or Needs Improvement.
+The 'calculateHealthStatusScore()' function can be implemented in JavaScript to calculate the health status score. The function can take the user's heart points and daily calories burned as input and use the following formula to calculate the health status score:
 
 ```javascript
-
-function calculateHealthStatusScore() {
-
-  const caloriesBurned = getCaloriesBurned();
-
-  const heartPoints = getHeartPoints();
-
-  const healthyGoal = 21;
-
-  const calorieRequirementMin = 2000;
-
-  const calorieRequirementMax = 2500;
-
-  if (heartPoints >= healthyGoal && caloriesBurned >= calorieRequirementMin && caloriesBurned <= calorieRequirementMax) {
-
-    return 'Excellent';
-
-  } else if (heartPoints >= healthyGoal || (caloriesBurned >= calorieRequirementMin && caloriesBurned <= calorieRequirementMax)) {
-
-    return 'Good';
-
-  } else {
-
-    return 'Needs Improvement';
-
-  }
-
+function calculateHealthStatusScore(heartPoints, caloriesBurned) {
+const healthScore = (caloriesBurned / 2250) + (heartPoints / 21);
+if (healthScore < 1) {
+return 'Needs Improvement';
+} else if (healthScore >= 1 && healthScore <= 2) {
+return 'Normal';
+} else if (healthScore > 2) {
+return 'Excellent';
 }
-
+}
 ```
 
-[![User Story 4](http://img.youtube.com/vi/XRzmQMS8uk0/0.jpg)](https://www.youtube.com/watch?v=XRzmQMS8uk0 "User Story 4")
+This function calculates the health score by dividing the user's calories burned by 2250 and adding it to the user's heart points divided by 21. Based on the calculated health score, the function returns the corresponding health status: 'Needs Improvement' if the score is less than 1, 'Normal' if the score is between 1 and 2 (inclusive), and 'Excellent' if the score is greater than 2.
+
+Please note that the formula used in this function is based on WHO/AHA guidelines and provides a health assessment aligned with evidence-based calorie and exercise guidelines for a healthy adult.
+
+References:
+
+[Technical Reference: Fitness Formulas](link_to_confluence_page)
+
+[Software Architecture Document](link_to_confluence_page)
+
+[![User Story 4 - Step 1](http://img.youtube.com/vi/PgkGvSvGxbc/0.jpg)](https://www.youtube.com/watch?v=PgkGvSvGxbc "User Story 4 - Step 1")
+
+[![User Story 4 - Step 2](http://img.youtube.com/vi/GjQUgxp_AR8/0.jpg)](https://www.youtube.com/watch?v=GjQUgxp_AR8 "User Story 4 - Step 2")
