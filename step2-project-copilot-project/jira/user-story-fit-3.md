@@ -8,7 +8,7 @@ Set up a project in the Google Cloud Console, enable the Fitness API, and obtain
 [Software Architecture Document](/step2-project-copilot-project/confluence/software-architecture-document.md)
 [Technical Reference: Google Identity Service JavaScript library](/step2-project-copilot-project/confluence/technical-reference-gis.md)
 ## Actions in Project Copilot:
-- Press "Complete" button 2 times
+- Press "Complete" button and check status until processing is done 3 times
 ## Final Description:
 User:
 As a developer, I need to create a Google Project and enable the Google Fitness API.
@@ -18,7 +18,6 @@ I will set up a project in the Google Cloud Console and enable the Fitness API. 
 
 Outcome:
 By completing these steps, I will have a Google Project with the Fitness API enabled. This will allow me to access and utilize the Fitness API's functionality, such as retrieving fitness data and integrating it into my application. The OAuth 2.0 client ID and API key will provide the necessary authentication and authorization for accessing the Fitness API securely.
-
 Acceptance Criteria:
 1. The developer should be able to set up a project in the Google Cloud Console.
 2. The developer should be able to enable the Google Fitness API for the created project.
@@ -26,6 +25,8 @@ Acceptance Criteria:
 4. The Google Project should have the Fitness API enabled, allowing the developer to access its functionality.
 5. The developer should be able to retrieve fitness data using the Fitness API.
 6. The developer should be able to integrate the retrieved fitness data into their application.
-7. The OAuth 2.0 client ID and API key should provide secure authentication and authorization for accessing the Fitness API.
+7. The OAuth 2.0 client ID and API key should provide secure authentication and authorization for accessing the Fitness API.8. 
 
-[![User Story 1](http://img.youtube.com/vi/SCoq1Olo3E0/0.jpg)](https://www.youtube.com/watch?v=SCoq1Olo3E0 "User Story 1")
+The implementation should take into account the information provided in the Software Architecture Document and the Technical Reference: Google Identity Service JavaScript library Confluence Pages.
+
+[![User Story 1](http://img.youtube.com/vi/mRDzkPGeYN8/0.jpg)](https://www.youtube.com/watch?v=mRDzkPGeYN8 "User Story 1")
