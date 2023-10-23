@@ -101,8 +101,8 @@
 ### PR-Agent Analysis
 
 #### PR Analysis:
-- **Main theme**: code generated for user story 4
-- **PR summary**: This PR adds code for user story 4, which involves integrating with the Google Fitness API to retrieve step count data. It includes the necessary JavaScript code to authenticate the user, obtain an access token, and make a request to fetch the step count for the current day.
+- **Main theme**: code generated for user story 2
+- **PR summary**: This PR adds code for user story 2, which involves integrating with the Google Fitness API to retrieve step count data. It includes the necessary JavaScript code to authenticate the user, obtain an access token, and make a request to fetch the step count for the current day.
 - **Type of PR**: Enhancement
 - **Estimated effort to review [1-5]**: 2, because the changes are focused on a specific user story and involve adding new code to integrate with an external API.
 #### PR Feedback: 
