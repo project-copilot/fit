@@ -64,12 +64,30 @@
           xhr.send(JSON.stringify(requestBody));
         });
       }
+
+      function getCalories() {
+        getStepCount().then(function(steps) {
+          const averageBMR = 1800;
+          const averageNEAT = 450;
+          const averageTEF = 200;
+          const adaptiveThermogenesis = 100;
+          const caloriesPerStep = 0.04;
+
+          const totalCaloriesBurned = averageBMR + averageNEAT + averageTEF + adaptiveThermogenesis + (steps * caloriesPerStep);
+
+          document.getElementById('calories').innerHTML = 'Calories Burned: ' + totalCaloriesBurned.toFixed(2);
+        }).catch(function(error) {
+          console.error(error);
+        });
+      }
     </script>
   </head>
   <body onload="initClient()">
     <h1>Fitness App</h1>
     <button onclick="getToken();">Get access token</button> <br><br>
     <button onclick="getStepCount();">Get Step Count</button> <br><br>
+    <button onclick="getCalories();">Get Calories Burned</button> <br><br>
     <button onclick="revokeToken();">Revoke token</button>
+    <div id="calories"></div>
   </body>
 </html>
