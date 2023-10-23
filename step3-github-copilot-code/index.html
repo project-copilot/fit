@@ -75,7 +75,19 @@
 
           const totalCaloriesBurned = averageBMR + averageNEAT + averageTEF + adaptiveThermogenesis + (steps * caloriesPerStep);
 
+          const heartPoints = 50; // Replace with actual heart points value
+          const healthScore = (totalCaloriesBurned / 2250) + (heartPoints / 21);
+          let healthStatus;
+          if (healthScore < 1) {
+            healthStatus = 'Needs Improvement';
+          } else if (healthScore >= 1 && healthScore <= 2) {
+            healthStatus = 'Normal';
+          } else if (healthScore > 2) {
+            healthStatus = 'Excellent';
+          }
+
           document.getElementById('calories').innerHTML = 'Calories Burned: ' + totalCaloriesBurned.toFixed(2);
+          document.getElementById('health-status').innerHTML = 'Health Status: ' + healthStatus;
         }).catch(function(error) {
           console.error(error);
         });
@@ -89,5 +101,6 @@
     <button onclick="getCalories();">Get Calories Burned</button> <br><br>
     <button onclick="revokeToken();">Revoke token</button>
     <div id="calories"></div>
+    <div id="health-status"></div>
   </body>
 </html>
