@@ -6,6 +6,7 @@
 
 Complete the following code:
 """
+```html
 <html>
   <head>
     
@@ -17,6 +18,7 @@ Complete the following code:
     <button onclick="revokeToken();">Revoke token</button>
   </body>
 </html>
+```
 """
 To implement the following user story:
 """
