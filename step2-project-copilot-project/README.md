@@ -79,3 +79,5 @@ _This document offers a high-level overview of the fitness formulas used in the 
 
 #### User story 4: Calculate my health status score
 - Follow this link to complete the User Story 4 using the Project Copilot for Jira App, step by step:  [User story 4](/step2-project-copilot-project/jira/user-story-fit-6.md)
+
+### Continue to Step 3: Implement Project code using GitHub Copilot [Step 3](/step3-github-copilot-code/README.md)
