@@ -22,5 +22,7 @@ To implement the following user story:
 #### User story 3: Calculate today's calories burned based on the number of steps
 - Please use this link to generate the code for User Story 3, utilizing the User Story created in Jira, with assistance from Project Copilot and GitHub Copilot to generate the code:  [User story 3](/step3-github-copilot-code/github-copilot/user-story-fit-5.md)
 
-#### User story 2: Calculate my health status score
+#### User story 4: Calculate my health status score
 - Please use this link to generate the code for User Story 4, utilizing the User Story created in Jira, with assistance from Project Copilot and GitHub Copilot to generate the code:  [User story 4](/step3-github-copilot-code/github-copilot/user-story-fit-6.md)
+
+### Continue to Step 4: Create semantic description of the Peer Reviews using Project Copilot [Step 4](/step4-project-copilot-revision/README.md)
