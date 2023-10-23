@@ -94,7 +94,21 @@ The goal of the CodeLab is to gradually recreate the same project with the assis
 
 The project's objective is to develop a compact client-side fitness application using HTML and JavaScript. This application should be capable of interfacing with the Google Fit REST API and computing daily calorie consumption based on the number of steps taken. Additionally, it should calculate a health score derived from these calories and "heart points."
 
-Link to install [Project Copilot](https://marketplace.atlassian.com/apps/1231554?tab=overview&hosting=cloud)
+## Requirements
+
+### Project Copilot:
+
+Link to install Project Copilot for Jira (Beta): [Project Copilot for Jira on Atlassian Marketplace](https://marketplace.atlassian.com/apps/1231554)
+
+Link to install Project Copilot for Confluence (Alpha): [Project Copilot for Confluence Alpha version 0.1](https://developer.atlassian.com/console/install/8a93e156-3682-44f1-a179-d03e01379de2?signature=4e995d26b6bb159474223be4c8018b55e06a8a1a6571e03f50ecdf866ac31eb5ad0a567d47d904c9d65b59d1f44a76d37561e34d4ee0f4fa64d204c73e6203b2&product=confluence)
+
+### GitHub Copilot:
+
+[GitHub Copilot](https://github.com/features/copilot)
+
+### PR-Agent:
+
+[PR-Agent](https://github.com/Codium-ai/pr-agent)
 
 
 

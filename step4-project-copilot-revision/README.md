@@ -11,4 +11,4 @@
 - Semantic Description of User Story 2 using PR-Agent: [User story 2](/step4-project-copilot-revision/pr-agent/user-story-fit-4.md)
 
 #### User story 3: Calculate and display the total calories burned in the Fitness App
-- Semantic Description of User Story 3 using PR-Agent: [User story 2](/step4-project-copilot-revision/pr-agent/user-story-fit-5.md)
+- Semantic Description of User Story 3 using PR-Agent: [User story 3](/step4-project-copilot-revision/pr-agent/user-story-fit-5.md)
