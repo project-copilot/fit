@@ -108,7 +108,7 @@ Sample code to retrieve an access token and use it to retrieve the user steps:
 Generated code:
 
 ```html
-html>
+<html>
   <head>
     <script src="https://apis.google.com/js/api.js"></script>
     <script>
