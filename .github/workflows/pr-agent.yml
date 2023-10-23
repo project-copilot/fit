@@ -1,0 +1,19 @@
+on:
+  pull_request:
+  issue_comment:
+jobs:
+  pr_agent_job:
+    runs-on: ubuntu-latest
+    name: Run pr agent on every pull request, respond to user comments
+    steps:
+      - name: PR Agent action step
+        id: pragent
+        uses: Codium-ai/pr-agent@main
+        env:
+          OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+          OPENAI.API_TYPE: ${{ secrets.OPENAI_API_TYPE }}
+          OPENAI.API_VERSION: ${{ secrets.OPENAI_API_VERSION }}
+          OPENAI.API_BASE: ${{ secrets.OPENAI_API_BASE }}
+          OPENAI.DEPLOYMENT_ID: ${{ secrets.OPENAI_DEPLOYMENT_ID }}
+          PR_REVIEWER.REQUIRE_TESTS_REVIEW: "false" # Disable tests review
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
