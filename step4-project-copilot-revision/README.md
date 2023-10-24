@@ -24,4 +24,10 @@
 #### User story 3: Calculate today's calories burned based on the number of steps
 - Semantic Review of the User Story 3 using Project Copilot: [User story 3 - Semantic Review](/step4-project-copilot-revision/project-copilot/user-story-fit-5.md)
 
+#### User story 4: Calculate my health status score
+- Semantic Review of the User Story 4 using Project Copilot: [User story 4 - Semantic Review](/step4-project-copilot-revision/project-copilot/user-story-fit-6.md)
+
+### Continue to Step 5: Project Analysis Report [Step 5](/step5-project-analysis-report/README.md)
+
+
 
