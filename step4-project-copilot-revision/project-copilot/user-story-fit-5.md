@@ -53,6 +53,7 @@ return totalCaloriesBurned;
 <review>This PR adds code to implement user story 3, which involves calculating and displaying the total calories burned in the Fitness App</review>
 ```
 - Press "Complete" button
+
 ## Final Description:
 User:
 As a fitness enthusiast, I want to calculate today's calories burned based on the number of steps I have taken.
