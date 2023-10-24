@@ -15,3 +15,7 @@
 
 #### User story 4: Calculate my health status score
 - Semantic Description of User Story 4 using PR-Agent: [User story 4](/step4-project-copilot-revision/pr-agent/user-story-fit-6.md)
+
+### Semantic Validation of the Pull Request description using Project Copilot
+
+

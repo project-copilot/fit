@@ -211,7 +211,7 @@
 </html>
 ```
 
-### PR-Agent Analysis without use User Story for PR description
+### PR-Agent Analysis without use User Story in the PR description
 
 #### PR Analysis:
 - **Main theme**: Implementing user story 4
@@ -224,5 +224,18 @@
     - **It would be helpful to have a brief description of the user story in the PR description for better context.**
 
 ![PR-Agent Analysis](/step4-project-copilot-revision/pr-agent/pr-analysis-user-story-4-1.png)
+
+### PR-Agent Analysis using User Story in the PR description
+
+#### PR Analysis:
+- **Main theme**: Implementing user story 4
+- **PR summary**: This PR implements the code for calculating the health status score based on heart points and daily calories burned. It adds the necessary JavaScript code to calculate the score and display it on the HTML page.
+- **Type of PR**: Enhancement
+- **Estimated effort to review [1-5]**: 2, because the changes are straightforward and the code is well-documented.
+#### PR Feedback: 
+- **General suggestions**: 
+    - The implementation looks good overall. However, it would be beneficial to add some input validation to ensure that the heart points and calories burned are valid numbers.
+
+_Note: The PR-Agent analysis is based on the [PR-Agent](https://github.com/Codium-ai/pr-agent) (License: **Apache License 2.0**) . We are working on our custom version, improving the promts and the analysis using our technology in order to achieve better results._
 
 
