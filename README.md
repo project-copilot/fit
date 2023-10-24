@@ -5,7 +5,7 @@ This CodeLab is a brief tutorial on how to utilize https://projectcopilot.co/ an
 
 ## Introduction to Project Copilot
 
-[![Project Copilot](http://img.youtube.com/vi/Uj0r2KoQtzQ/0.jpg)](https://www.youtube.com/watch?v=Uj0r2KoQtzQ "Introduction to Project Copilot, an AI Assistant to Improve Project Management in Jira")
+[![Project Copilot](http://img.youtube.com/vi/_xR0YHtco1A/0.jpg)](https://www.youtube.com/watch?v=_xR0YHtco1A "Unlocking Seamless Software Development with Project Copilot: An Introduction")
 
 
 ### The Advantages of Project Copilot
