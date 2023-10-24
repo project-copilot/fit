@@ -10,5 +10,8 @@
 #### User story 2: Add the authentication to access the Google Fitness API
 - Semantic Description of User Story 2 using PR-Agent: [User story 2](/step4-project-copilot-revision/pr-agent/user-story-fit-4.md)
 
-#### User story 3: Calculate and display the total calories burned in the Fitness App
+#### User story 3: Calculate today's calories burned based on the number of steps
 - Semantic Description of User Story 3 using PR-Agent: [User story 3](/step4-project-copilot-revision/pr-agent/user-story-fit-5.md)
+
+#### User story 4: Calculate my health status score
+- Semantic Description of User Story 4 using PR-Agent: [User story 4](/step4-project-copilot-revision/pr-agent/user-story-fit-6.md)
