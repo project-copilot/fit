@@ -236,6 +236,8 @@
 - **General suggestions**: 
     - The implementation looks good overall. However, it would be beneficial to add some input validation to ensure that the heart points and calories burned are valid numbers.
 
+![PR-Agent Analysis](/step4-project-copilot-revision/pr-agent/pr-analysis-user-story-4-2.png)
+
 _Note: The PR-Agent analysis is based on the [PR-Agent](https://github.com/Codium-ai/pr-agent) (License: **Apache License 2.0**) . We are working on our custom version, improving the promts and the analysis using our technology in order to achieve better results._
 
 
