@@ -8,14 +8,17 @@
 ### User stories:
 
 #### User story 2: Add the authentication to access the Google Fitness API
-- Semantic Description of User Story 2 using PR-Agent: [User story 2](/step4-project-copilot-revision/pr-agent/user-story-fit-4.md)
+- Semantic Description of the code for the User Story 2 using PR-Agent: [User story 2 - Semantic Description](/step4-project-copilot-revision/pr-agent/user-story-fit-4.md)
 
 #### User story 3: Calculate today's calories burned based on the number of steps
-- Semantic Description of User Story 3 using PR-Agent: [User story 3](/step4-project-copilot-revision/pr-agent/user-story-fit-5.md)
+- Semantic Description of the code for the User Story 3 using PR-Agent: [User story 3 - Semantic Description](/step4-project-copilot-revision/pr-agent/user-story-fit-5.md)
 
 #### User story 4: Calculate my health status score
-- Semantic Description of User Story 4 using PR-Agent: [User story 4](/step4-project-copilot-revision/pr-agent/user-story-fit-6.md)
+- Semantic Description of the code for the User Story 4 using PR-Agent: [User story 4 - Semantic Description](/step4-project-copilot-revision/pr-agent/user-story-fit-6.md)
 
 ### Semantic Validation of the Pull Request description using Project Copilot
+
+#### User story 2: Add the authentication to access the Google Fitness API
+- Semantic Validation of the User Story 2 using Project Copilot: [User story 2 - Semantic Validation](/step4-project-copilot-revision/project-copilot/user-story-fit-4.md)
 
 
