@@ -27,7 +27,7 @@
 #### User story 4: Calculate my health status score
 - Semantic Review of the User Story 4 using Project Copilot: [User story 4 - Semantic Review](/step4-project-copilot-revision/project-copilot/user-story-fit-6.md)
 
-### Continue to Step 5: Project Analysis Report [Step 5](/step5-project-analysis-report/README.md)
+### Continue to Step 5: Project Analysis Report [Step 5](/step5-analysis-report/README.md)
 
 
 

@@ -44,3 +44,5 @@ link [Bug 3](/step1-human-only-project/jira/bug-fit-9.md)
 ### Project metrics
 #### Project planning and Code development time: 10hs.
 #### Bugs: 3.
+
+### Continue to Step 2: Project Copilot and GitHub Copilot [Step 2](/step2-project-copilot-project/README.md)
