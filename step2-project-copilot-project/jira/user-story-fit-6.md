@@ -4,6 +4,10 @@
 ## Title: Calculate my health status score
 ## Initial Description:
 Calculate and display the health status score by comparing the heart points and the daily calories burned with a healthy goal.
+## Linked documents:
+[Software Architecture Document](/step2-project-copilot-project/confluence/software-architecture-document.md)
+[Technical Reference: Google FIT Rest API](/step2-project-copilot-project/confluence/technical-reference-google-fit-rest-api.md)
+[Technical Reference: Fitness Formulas](/step2-project-copilot-project/confluence/technical-reference-fitness-formulas.md)
 
 ## Actions in Project Copilot:
 - Press "Complete" button to rewrite the user story with the proper format.
